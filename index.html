@@ -3,47 +3,531 @@
     <head>
         <title>Murillo Invitation Studio</title>
 
-        <link rel="stylesheet" href="design.css"> <!-- Hoja de estilos -->
-        <script src="script.js" defer></script> <!-- Script -->
-
-        <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Google APIs -->
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- Google APIs -->
-
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta property="og:locale" content="es_MX"> <!-- Idioma -->
+        <link href="styles.css" rel="stylesheet"/>
+        
+        <meta charset="utf-8"/>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+        <meta content="es_MX" property="og:locale"/>
+        <meta content="Murillo Invitation Studio — Invitaciones digitales únicas para tus eventos más especiales." name="description"/>
+        
+        <link href="https://fonts.googleapis.com" rel="preconnect"/>
+        <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&amp;family=Jost:wght@300;400;500&amp;display=swap" rel="stylesheet"/>
     </head>
     <body>
+        <!-- NAVEGACION PRINCIPAL -->
         <header>
-            <h1>Murillo Invitation Studio</h1>
+            <a class="logo" href="#home">Murillo <span>Invitation</span> Studio</a>
             <nav>
                 <ul>
-                    <li><a href="#home">Inicio</a></li>
-                    <li><a href="#services">Servicios</a></li>
+                    <li><a href="#events">Eventos</a></li>
+                    <li><a href="#catalog">Catálogo</a></li>
+                    <li><a href="#why">Nosotros</a></li>
+                    <li><a href="#process">Proceso</a></li>
                     <li><a href="#contact">Contacto</a></li>
                 </ul>
             </nav>
         </header>
 
-        <main>
-            <section id="home">
-                <h2>Bienvenido a Murillo Invitation Studio</h2>
-                <p>Diseñamos invitaciones personalizadas para tus eventos especiales.</p>
-            </section>
+        <!-- HOME -->
+        <section id="home">
+            <div class="hero-bg"></div>
+            <div class="hero-ornament"></div>
+            
+            <div class="hero-content">
+                <span class="hero-tag fade-in">Invitaciones Digitales · Diseño Personalizado</span>
+                
+                <h1 class="hero-title fade-in fade-in-delay-1">
+                    Cada evento merece<br/>
+                    una invitación <em>única</em>
+                </h1>
+                
+                <p class="hero-sub fade-in fade-in-delay-2"> Diseños exclusivos que cautivan desde el primer vistazo</p>
+                <p class="hero-desc fade-in fade-in-delay-3"> Creamos invitaciones digitales personalizadas que reflejan la esencia de tu evento especial. Elegantes, memorables y listas para compartir.</p>
+                
+                <div class="fade-in fade-in-delay-4">
+                    <a class="btn-primary" href="#catalog">Ver Catálogo</a>
+                    <a class="btn-outline" href="#contact">Solicitar Cotización</a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- TIPOS DE EVENTOS -->
+        <section id="events">
+            <span class="section-tag fade-in">Tipos de eventos</span>
+            
+            <h2 class="section-title fade-in">Para cada <em>ocasión especial</em></h2>
+            
+            <div class="section-divider fade-in"></div>
+            
+            <p class="section-lead fade-in">Diseñamos invitaciones a la medida de cada celebración, con estilos únicos que capturan el espíritu de tu evento.</p>
+            
+            <div class="events-grid">
+                <div class="event-card fade-in">
+                    <span class="event-num">01</span>
+                    <span class="event-icon">💍</span>
+                
+                    <h3 class="event-name">Bodas</h3>
+                    <p class="event-desc">Invitaciones elegantes y románticas para el día más importante de tu vida. Diseños clásicos, modernos o rústicos.</p>
+                </div>
+                
+                <div class="event-card fade-in fade-in-delay-1">
+                    <span class="event-num">02</span>
+                    <span class="event-icon">🌸</span>
+                    
+                    <h3 class="event-name">XV Años</h3>
+                    <p class="event-desc">Celebra tu quinceañera con una invitación que sea tan especial como tú. Floral, glamour o temática personalizada.</p>
+                </div>
+                
+                <div class="event-card fade-in fade-in-delay-2">
+                    <span class="event-num">03</span>
+                    <span class="event-icon">🎂</span>
+                    
+                    <h3 class="event-name">Cumpleaños</h3>
+                    <p class="event-desc">Para todas las edades y estilos. Desde fiestas infantiles hasta celebraciones de adultos llenas de personalidad.</p>
+                </div>
+                
+                <div class="event-card fade-in fade-in-delay-3">
+                    <span class="event-num">04</span>
+                    <span class="event-icon">🏢</span>
+                    
+                    <h3 class="event-name">Eventos Corporativos</h3>
+                    <p class="event-desc">Comunicaciones formales y profesionales para lanzamientos, conferencias, cenas de empresa y más.</p>
+                </div>
+                
+                <div class="event-card fade-in">
+                    <span class="event-num">05</span>
+                    <span class="event-icon">🕊️</span>
+                    
+                    <h3 class="event-name">Bautizos y Primera Comunión</h3>
+                    <p class="event-desc">Diseños tiernos y espirituales para los sacramentos más importantes de la vida de tus pequeños.</p>
+                </div>
+                
+                <div class="event-card fade-in fade-in-delay-1">
+                    <span class="event-num">06</span>
+                    <span class="event-icon">🎓</span>
+                    
+                    <h3 class="event-name">Graduaciones</h3>
+                    <p class="event-desc">Celebra el logro académico con invitaciones que transmiten orgullo y emoción. Tradicionales o con un toque moderno.</p>
+                </div>
+            </div>
+        </section>
 
-            <section id="services">
-                <h2>Nuestros Servicios</h2>
-                <ul>
-                    <li>Diseño de invitaciones para bodas, cumpleaños y eventos corporativos.</li>
-                    <li>Personalización de invitaciones con tus fotos y textos.</li>
-                    <li>Impresión de alta calidad y envío a domicilio.</li>
-                </ul>
-            </section>
+        <!-- CATÁLOGO -->
+        <section>
+            <div id="catalog">
+                <div class="catalog-header">
+                    <div>
+                        <span class="section-tag fade-in">Catálogo</span>
+                        
+                        <h2 class="section-title fade-in">Nuestros <em>diseños</em></h2>
+                        <div class="section-divider fade-in"></div>
+                        <p class="section-lead fade-in">Cada diseño es un punto de partida. Lo personalizamos con tus colores, textos y fotos.</p>
+                    </div>
+                    
+                    <div class="fade-in">
+                        <div class="catalog-filter">
+                            <button class="filter-btn active" onclick="filterCatalog('all', this)">Todos</button>
+                            <button class="filter-btn" onclick="filterCatalog('boda', this)">Bodas</button>
+                            <button class="filter-btn" onclick="filterCatalog('xv', this)">XV Años</button>
+                            <button class="filter-btn" onclick="filterCatalog('cumple', this)">Cumpleaños</button>
+                            <button class="filter-btn" onclick="filterCatalog('corporativo', this)">Corporativo</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="catalog-grid" id="catalog-grid">
+                    <div class="catalog-item" data-cat="boda">
+                        <div class="catalog-preview preview-boda">
+                            <div class="preview-mock">
+                                <div class="preview-mock-line"></div>
+                                <div class="preview-mock-text">te invitamos a nuestra</div>
+                                <div class="preview-mock-title">Boda</div>
+                                <div class="preview-mock-line"></div>
+                                <div class="preview-mock-text">Ana &amp; Carlos</div>
+                                <div class="preview-mock-line"></div>
+                            </div>
+                            
+                            <span class="catalog-badge">Popular</span>
+                        </div>
 
-            <section id="contact">
-                <h2>Contacto</h2>
-                <p>Para más información, contáctanos:</p>
-                <ul>
-                    <li>Email:
+                        <div class="catalog-info">
+                            <p class="catalog-event-type">Boda</p>
+                            <h3 class="catalog-name">Clásico Dorado</h3>
+                            <p class="catalog-desc-small">Elegancia atemporal con detalles dorados</p>
+                        </div>
+                    </div>
+                    
+                    <div class="catalog-item" data-cat="xv">
+                        <div class="catalog-preview preview-xv">
+                            <div class="preview-mock" style="background: rgba(245,232,250,0.9);">
+                                <div class="preview-mock-line" style="background: rgba(180,120,200,0.4);"></div>
+                                <div class="preview-mock-text">celebra conmigo mis</div>
+                                <div class="preview-mock-title" style="color: #8B5A9A;">XV Años</div>
+                                <div class="preview-mock-line" style="background: rgba(180,120,200,0.4);"></div>
+                                <div class="preview-mock-text">Sofía Murillo</div>
+                                <div class="preview-mock-line" style="background: rgba(180,120,200,0.4);"></div>
+                            </div>
+                        </div>
+
+                        <div class="catalog-info">
+                            <p class="catalog-event-type">XV Años</p>
+                            <h3 class="catalog-name">Floral Lila</h3>
+                            <p class="catalog-desc-small">Romántico y elegante con flores de temporada</p>
+                        </div>
+                    </div>
+
+                    <div class="catalog-item" data-cat="cumple">
+                        <div class="catalog-preview preview-cumple">
+                            <div class="preview-mock" style="background: rgba(232,240,250,0.9);">
+                                <div class="preview-mock-line" style="background: rgba(70,130,200,0.4);"></div>
+                                <div class="preview-mock-text">¡estás invitado a mi</div>
+                                <div class="preview-mock-title" style="color: #2A6CB5;">Fiesta!</div>
+                                <div class="preview-mock-line" style="background: rgba(70,130,200,0.4);"></div>
+                                <div class="preview-mock-text">28 de junio · 7pm</div>
+                                <div class="preview-mock-line" style="background: rgba(70,130,200,0.4);"></div>
+                            </div>
+                            
+                            <span class="catalog-badge">Nuevo</span>
+                        </div>
+
+                        <div class="catalog-info">
+                            <p class="catalog-event-type">Cumpleaños</p>
+                            <h3 class="catalog-name">Modern Party</h3>
+                            <p class="catalog-desc-small">Fresco y contemporáneo para celebraciones adultas</p>
+                        </div>
+                    </div>
+
+                    <div class="catalog-item" data-cat="corporativo">
+                        <div class="catalog-preview preview-corporativo">
+                            <div class="preview-mock" style="background: rgba(235,238,245,0.95);">
+                                <div class="preview-mock-line" style="background: rgba(50,70,120,0.3);"></div>
+                                <div class="preview-mock-text" style="font-style: normal; letter-spacing: 0.1em; text-transform: uppercase; font-size: 0.55rem;">Conferencia Anual</div>
+                                <div class="preview-mock-title" style="color: #2A3A6A; font-size: 0.85rem;">Tech Summit 2025</div>
+                                <div class="preview-mock-line" style="background: rgba(50,70,120,0.3);"></div>
+                                <div class="preview-mock-text" style="font-style: normal; font-size: 0.6rem;">15 de Marzo · Centro de Convenciones</div>
+                                <div class="preview-mock-line" style="background: rgba(50,70,120,0.3);"></div>
+                            </div>
+                        </div>
+
+                        <div class="catalog-info">
+                            <p class="catalog-event-type">Corporativo</p>
+                            <h3 class="catalog-name">Ejecutivo Pro</h3>
+                            <p class="catalog-desc-small">Profesional y sofisticado para eventos empresariales</p>
+                        </div>
+                    </div>
+
+                    <div class="catalog-item" data-cat="boda">
+                        <div class="catalog-preview" style="background: linear-gradient(135deg, #F0F5F0 0%, #D8EAD8 100%);">
+                            <div class="preview-mock" style="background: rgba(240,245,240,0.9);">
+                                <div class="preview-mock-line" style="background: rgba(80,140,80,0.4);"></div>
+                                <div class="preview-mock-text">los invitamos a celebrar</div>
+                                <div class="preview-mock-title" style="color: #3A7A3A;">Nuestra Boda</div>
+                                <div class="preview-mock-line" style="background: rgba(80,140,80,0.4);"></div>
+                                <div class="preview-mock-text">Laura &amp; Miguel</div>
+                                <div class="preview-mock-line" style="background: rgba(80,140,80,0.4);"></div>
+                            </div>
+                        </div>
+
+                        <div class="catalog-info">
+                            <p class="catalog-event-type">Boda</p>                               
+                            <h3 class="catalog-name">Jardín Botánico</h3>
+                            <p class="catalog-desc-small">Natural y fresco con elementos orgánicos y verdes</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- POR QUÉ NOSOTROS -->
+        <section id="why">
+            <div class="why-grid">
+                <div>
+                    <span class="section-tag fade-in" style="color: var(--gold);">¿Por qué elegirnos?</span>
+                    <h2 class="section-title fade-in">Calidad y <em>pasión</em><br/>en cada detalle</h2>
+                    <div class="section-divider fade-in"></div>
+                    <div class="why-list">
+                        <div class="why-item fade-in">
+                            <span class="why-num">01</span>
+                            <div>
+                                <h3>Diseño 100% personalizado</h3>
+                                <p>Cada invitación se crea desde cero pensando en ti y en la esencia de tu evento. No usamos plantillas genéricas.</p>
+                            </div>
+                        </div>
+                        <div class="why-item fade-in fade-in-delay-1">
+                            <span class="why-num">02</span>
+                            <div>
+                                <h3>Entrega en 24–48 horas</h3>
+                                <p>Sabemos que el tiempo es valioso. Una vez aprobado el diseño, tu invitación estará lista para compartir muy rápido.</p>
+                            </div>
+                        </div>
+                        <div class="why-item fade-in fade-in-delay-2">
+                            <span class="why-num">03</span>
+                            <div>
+                                <h3>Revisiones incluidas</h3>
+                                <p>Hacemos los ajustes que necesites hasta que el diseño sea exactamente lo que imaginabas. Tu satisfacción es nuestra prioridad.</p>
+                            </div>
+                        </div>
+                        <div class="why-item fade-in fade-in-delay-3">
+                            <span class="why-num">04</span>
+                            <div>
+                                <h3>Formatos para todos los canales</h3>
+                                <p>Entregamos en formato para WhatsApp, Instagram, correo electrónico y más. Compatibles con cualquier dispositivo.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="preview-mock-text">🎓 celebra con nosotros</div>
+                        <div class="preview-mock-title" style="color: #8B6A10; font-size: 0.9rem;">Graduación</div>
+                        <div class="preview-mock-line" style="background: rgba(180,150,50,0.4);"></div>
+                        <div class="preview-mock-text">Generación 2025</div>
+                        <div class="preview-mock-line" style="background: rgba(180,150,50,0.4);"></div>
+                    </div>
+                </div>
+
+                <div class="catalog-info">
+                    <p class="catalog-event-type">Graduación</p>
+                    <h3 class="catalog-name">Honor &amp; Logro</h3>
+                    <p class="catalog-desc-small">Dorado y elegante para celebrar el éxito académico</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- POR QUÉ NOSOTROS -->
+        <section id="why">
+            <div class="why-grid">
+                <div>
+                    <span class="section-tag fade-in" style="color: var(--gold);">¿Por qué elegirnos?</span>
+                    
+                    <h2 class="section-title fade-in">Calidad y <em>pasión</em><br/>en cada detalle</h2>
+                    
+                    <div class="section-divider fade-in"></div>
+                    <div class="why-list">
+                        <div class="why-item fade-in">
+                            <span class="why-num">01</span>
+                            <div>
+                                <h3>Diseño 100% personalizado</h3>
+                                <p>Cada invitación se crea desde cero pensando en ti y en la esencia de tu evento. No usamos plantillas genéricas.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="why-item fade-in fade-in-delay-1">
+                            <span class="why-num">02</span>
+                            <div>
+                                <h3>Entrega en 24–48 horas</h3>
+                                <p>Sabemos que el tiempo es valioso. Una vez aprobado el diseño, tu invitación estará lista para compartir muy rápido.</p>
+                            </div>
+                        </div>
+
+                        <div class="why-item fade-in fade-in-delay-2">
+                            <span class="why-num">03</span>
+                            <div>
+                                <h3>Revisiones incluidas</h3>
+                                <p>Hacemos los ajustes que necesites hasta que el diseño sea exactamente lo que imaginabas. Tu satisfacción es nuestra prioridad.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="why-item fade-in fade-in-delay-3">
+                            <span class="why-num">04</span>
+                            <div>
+                                <h3>Formatos para todos los canales</h3>
+                                <p>Entregamos en formato para WhatsApp, Instagram, correo electrónico y más. Compatibles con cualquier dispositivo.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="why-quote-block fade-in">
+                    <p class="why-quote">"Una invitación es el primer capítulo de la historia de tu evento."</p>
+                    
+                    <div class="why-stat-row">
+                        <div class="why-stat">
+                            <h4>+200</h4>
+                            <p>Eventos diseñados</p>
+                        </div>
+                        
+                        <div class="why-stat">
+                            <h4>98%</h4>
+                            <p>Clientes satisfechos</p>
+                        </div>
+                        <div class="why-stat">
+                            <h4>5★</h4>
+                            <p>Calificación promedio</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROCESO -->
+        <section id="process">
+            <span class="section-tag fade-in">¿Cómo funciona?</span>
+            
+            <h2 class="section-title fade-in">Proceso <em>simple</em> en 4 pasos</h2>
+            
+            <div class="section-divider"></div>
+            <div class="process-steps">
+                <div class="process-step fade-in">
+                    <div class="step-num">1</div>
+                    
+                    <h3 class="step-title">Contáctanos</h3>
+                    <p class="step-desc">Cuéntanos sobre tu evento, fecha, tema y cualquier idea que tengas en mente.</p>
+                </div>
+                
+                <div class="process-step fade-in fade-in-delay-1">
+                    <div class="step-num">2</div>
+                    
+                    <h3 class="step-title">Cotización</h3>
+                    <p class="step-desc">Te enviamos una propuesta personalizada con el precio y tiempo de entrega.</p>
+                </div>
+                
+                <div class="process-step fade-in fade-in-delay-2">
+                    <div class="step-num">3</div>
+                    
+                    <h3 class="step-title">Diseño</h3>
+                    <p class="step-desc">Creamos tu invitación y la refinamos juntos con tus comentarios y ajustes.</p>
+                </div>
+                
+                <div class="process-step fade-in fade-in-delay-3">
+                    <div class="step-num">4</div>
+                    
+                    <h3 class="step-title">Entrega</h3>
+                    <p class="step-desc">Recibes tu invitación lista en los formatos que necesitas para compartir.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACTO -->
+        <section id="contact">
+            <div class="contact-wrapper">
+                <div>
+                    <span class="section-tag fade-in">Contacto</span>
+                    
+                    <h2 class="section-title fade-in">Hablemos de tu<br/><em>próximo evento</em></h2>
+                    <div class="section-divider fade-in"></div>
+                    
+                    <p class="section-lead fade-in">Estamos listos para crear la invitación perfecta para ti. Escríbenos y con gusto te atendemos.</p>
+                    
+                    <div class="contact-info">
+                        <div class="contact-row fade-in">
+                            <div class="contact-icon">📱</div>
+                            <div>
+                                <h3>WhatsApp</h3>
+                                <a href="https://wa.me/523310000000" target="_blank">+52 33 1000 0000</a>
+                                <progress>Lun–Sáb · 9am – 8pm</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-row fade-in fade-in-delay-1">
+                            <div class="contact-icon">📧</div>
+                            <div>
+                                <h3>Correo Electrónico</h3>
+                                <a href="mailto:contacto@murillostudio.mx">contacto@murillostudio.mx</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-row fade-in fade-in-delay-2">
+                            <div class="contact-icon">📍</div>
+                            <div>
+                                <h3>Ubicación</h3>
+                                <p>Tonalá, Jalisco, México</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-row fade-in fade-in-delay-3">
+                            <div class="contact-icon">📸</div>
+                            <div>
+                                <h3>Instagram</h3>
+                                <a href="https://instagram.com/murillostudio" target="_blank">@murillostudio</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-block fade-in">
+                    <h3>Solicita tu cotización</h3>
+                    <p>Cuéntanos sobre tu evento y te respondemos a la brevedad.</p>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Nombre</label>
+                            <input placeholder="Tu nombre" type="text"/>
+                        </div>
+
+                        <div class="form-group">
+                            <label>WhatsApp / Teléfono</label>
+                            <input placeholder="+52 33 ···" type="tel"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Tipo de evento</label>
+                        
+                        <select>
+                            <option disabled="" selected="" value="">Selecciona el tipo de evento</option>
+                            <option>Boda</option>
+                            <option>XV Años</option>
+                            <option>Cumpleaños</option>
+                            <option>Corporativo</option>
+                            <option>Bautizo / Primera Comunión</option>
+                            <option>Graduación</option>
+                            <option>Otro</option>
+                        </select>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Fecha del evento</label>
+                            <input type="date"/>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Presupuesto aproximado</label>
+                            
+                            <select>
+                                <option disabled="" selected="" value="">Rango</option>
+                                <option>Menos de $500</option>
+                                <option>$500 – $1,000</option>
+                                <option>$1,000 – $2,000</option>
+                                <option>Más de $2,000</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Cuéntanos más</label>
+                        <textarea placeholder="Describe tu idea, tema, colores, número de invitados..."></textarea>
+                    </div>
+
+                    <button class="btn-primary" onclick="enviarWhatsApp()">
+                        Enviar por WhatsApp
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer>
+            <div class="footer-logo">Murillo <span>Invitation</span> Studio</div>
+            <ul class="footer-nav">
+                <li><a href="#events">Eventos</a></li>
+                <li><a href="#catalog">Catálogo</a></li>
+                <li><a href="#why">Nosotros</a></li>
+                <li><a href="#process">Proceso</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+
+            <div class="footer-divider"></div>
+            <p class="footer-copy">© 2025 Murillo Invitation Studio · Tonalá, Jalisco, México · Todos los derechos reservados</p>
+        </footer>
+
+        <!-- WhatsApp Float -->
+
+        <a aria-label="Contactar por WhatsApp" class="wa-btn" href="https://wa.me/523310000000" target="_blank">
+            <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path>
+            </svg>
+        </a>
+
+        <script src="script.js"></script>
     </body>
 </html>
