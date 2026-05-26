@@ -54,7 +54,10 @@ header{
   transition: background 0.3s;
 }
 
-.Cabezera{
+//-----------------------------
+// Nombre de la empresa
+//-----------------------------
+.NombreEmpresa{
   font-family: $font-titulos;
   font-size: 1.4rem;
   font-weight: 300;
@@ -68,6 +71,9 @@ header{
   }
 }
 
+//-----------------------------
+// Navegacion
+//-----------------------------
 nav{
   ul{
     list-style: none;
