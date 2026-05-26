@@ -1,0 +1,106 @@
+//-----------------------------
+// Variables
+//-----------------------------
+$font-titulos: 'Cormorant Garamond', serif;
+$font-sans: 'Jost', sans-serif;;
+
+$color-grisclaro: #e4e4e4;
+$color-blanco: #fff;
+$color-negro: #000;
+$color-dorado_oscuro: #DAA520;
+$color-dorado: #C9A96E;
+$color-crema: #FAF7F2;
+$color-cafe_oscuro: #1C1612;
+$color-cafe: #4A3F35;
+
+$shadow-titulo-pc: 4px 4px 0 $color-negro;
+$shadow-titulo-movil: 3px 3px 0 $color-negro;
+
+//-----------------------------
+// Cuerpo del HTML
+//-----------------------------
+body{
+  font-family: $font-sans;
+  background: $color-crema;
+  color: $color-negro;
+  font-weight: 300;
+  line-height: 1.7;
+  overflow-x: hidden;
+
+  ::before{
+    content: '';
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 9999;
+    opacity: 0.35;
+  }
+}
+
+//-----------------------------
+// Header de navegacion
+//-----------------------------
+header{
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  padding: 1.2rem 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: $color-crema;
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid $color-negro;
+  transition: background 0.3s;
+}
+
+.Cabezera{
+  font-family: $font-titulos;
+  font-size: 1.4rem;
+  font-weight: 300;
+  letter-spacing: 0.08em;
+  color: $color-cafe_oscuro;
+  text-decoration: none;
+
+  span{
+      color: $color-dorado_oscuro;
+      font-style: italic;
+  }
+}
+
+nav{
+  ul{
+    list-style: none;
+    display: flex;
+    gap: 2.5rem;
+  }
+
+  a{
+    font-family: $font-sans;
+    font-size: 0.78rem;
+    font-weight: 400;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: $color-cafe;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s;
+  }
+
+  a::after{
+    content: '';
+    position: absolute;
+    bottom: -2px; left: 0; right: 100%;
+    height: 1px;
+    background: $color-dorado_oscuro;
+    transition: right 0.35s ease;
+  }
+
+  a:hover{
+    color: $color-negro;
+  }
+
+  a:hover::after{
+    right: 0;
+  }
+}

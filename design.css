@@ -1,1 +1,78 @@
-/*# sourceMappingURL=design.css.map */
+body {
+  font-family: "Jost", sans-serif;
+  background: #FAF7F2;
+  color: #000;
+  font-weight: 300;
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+body ::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.35;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  padding: 1.2rem 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #FAF7F2;
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid #000;
+  transition: background 0.3s;
+}
+
+.Cabezera {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.4rem;
+  font-weight: 300;
+  letter-spacing: 0.08em;
+  color: #1C1612;
+  text-decoration: none;
+}
+.Cabezera span {
+  color: #DAA520;
+  font-style: italic;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2.5rem;
+}
+nav a {
+  font-family: "Jost", sans-serif;
+  font-size: 0.78rem;
+  font-weight: 400;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #4A3F35;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s;
+}
+nav a::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 100%;
+  height: 1px;
+  background: #DAA520;
+  transition: right 0.35s ease;
+}
+nav a:hover {
+  color: #000;
+}
+nav a:hover::after {
+  right: 0;
+}/*# sourceMappingURL=design.css.map */
