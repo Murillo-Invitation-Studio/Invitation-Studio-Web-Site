@@ -32,7 +32,7 @@ body{
     position: fixed;
     inset: 0;
     pointer-events: none;
-    z-index: 9999;
+    z-index: 0;
     opacity: 0.35;
   }
 }
@@ -41,72 +41,97 @@ body{
 // Header de navegacion
 //-----------------------------
 header{
-  position: fixed;
+  position: relative;
   top: 0; left: 0; right: 0;
   z-index: 100;
-  padding: 1.2rem 4rem;
+  padding: 0.5rem 3rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
   background: $color-crema;
   backdrop-filter: blur(12px);
-  border-bottom: 1px solid $color-negro;
+  border-bottom: 1px solid $color-dorado_oscuro;
   transition: background 0.3s;
-}
 
-//-----------------------------
-// Nombre de la empresa
-//-----------------------------
-.NombreEmpresa{
-  font-family: $font-titulos;
-  font-size: 1.4rem;
-  font-weight: 300;
-  letter-spacing: 0.08em;
-  color: $color-cafe_oscuro;
-  text-decoration: none;
-
-  span{
-      color: $color-dorado_oscuro;
-      font-style: italic;
-  }
-}
-
-//-----------------------------
-// Navegacion
-//-----------------------------
-nav{
-  ul{
-    list-style: none;
-    display: flex;
-    gap: 2.5rem;
-  }
-
-  a{
-    font-family: $font-sans;
-    font-size: 0.78rem;
-    font-weight: 400;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    color: $color-cafe;
+  //-----------------------------
+  // Nombre de la empresa
+  //-----------------------------
+  .NombreEmpresa{
+    font-family: $font-titulos;
+    font-size: 1.4rem;
+    font-weight: 300;
+    letter-spacing: 0.08em;
+    color: $color-cafe_oscuro;
     text-decoration: none;
-    position: relative;
-    transition: color 0.3s;
+
+    span{
+        color: $color-dorado_oscuro;
+        font-style: italic;
+    }
   }
 
-  a::after{
-    content: '';
-    position: absolute;
-    bottom: -2px; left: 0; right: 100%;
-    height: 1px;
-    background: $color-dorado_oscuro;
-    transition: right 0.35s ease;
-  }
+  //-----------------------------
+  // Navegacion
+  //-----------------------------
+  nav{
+    ul{
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+    }
 
-  a:hover{
-    color: $color-negro;
-  }
+    a{
+      font-family: $font-sans;
+      font-size: 0.78rem;
+      font-weight: 400;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: $color-cafe;
+      text-decoration: none;
+      position: relative;
+      transition: color 0.3s;
+    }
 
-  a:hover::after{
-    right: 0;
+    a::after{
+      content: '';
+      position: absolute;
+      bottom: -2px; left: 0; right: 100%;
+      height: 1px;
+      background: $color-dorado_oscuro;
+      transition: right 0.35s ease;
+    }
+
+    a:hover{
+      color: $color-negro;
+    }
+
+    a:hover::after{
+      right: 0;
+    }
+  }
+}
+
+#Home{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 3rem;
+  position: relative;
+  z-index: 2;
+
+  .TagContenido{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-family: $font-sans;
+    font-size: 0.30rem;
+    letter-spacing: .3rem;
+    text-transform: uppercase;
+    color: $color-dorado;
+    border: 1px solid $color-dorado_oscuro;
+    padding: 0.4rem 1.2rem;
+    margin-bottom: 0;
+    border-radius: 2px;
   }
 }
