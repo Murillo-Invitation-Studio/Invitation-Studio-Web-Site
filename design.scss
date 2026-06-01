@@ -7,6 +7,7 @@ $font-sans: 'Jost', sans-serif;;
 $color-grisclaro: #e4e4e4;
 $color-blanco: #fff;
 $color-negro: #000;
+$color-dorado_mas_oscuro: #8B6A3A;
 $color-dorado_oscuro: #DAA520;
 $color-dorado: #C9A96E;
 $color-crema: #FAF7F2;
@@ -70,9 +71,9 @@ header{
     }
   }
 
-  //-----------------------------
-  // Navegacion
-  //-----------------------------
+//-----------------------------
+// Navegacion
+//-----------------------------
   nav{
     ul{
       list-style: none;
@@ -111,6 +112,9 @@ header{
   }
 }
 
+//-----------------------------
+// Contenido principal
+//-----------------------------
 #Home{
   min-height: 100vh;
   display: flex;
@@ -120,18 +124,103 @@ header{
   position: relative;
   z-index: 2;
 
-  .TagContenido{
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    font-family: $font-sans;
-    font-size: 0.30rem;
-    letter-spacing: .3rem;
-    text-transform: uppercase;
-    color: $color-dorado;
-    border: 1px solid $color-dorado_oscuro;
-    padding: 0.4rem 1.2rem;
-    margin-bottom: 0;
-    border-radius: 2px;
+  .Contenido{
+    .TagContenido{
+      display: inline-flex;
+      text-align: center;
+      justify-content: center;
+      font-size: 0.30rem;
+      letter-spacing: .3rem;
+      text-transform: uppercase;
+      border: 1px solid $color-dorado_oscuro;
+      padding: 0.4rem 1rem;
+      margin-bottom: 0;
+      border-radius: 2px;
+
+      .Tag{
+        color: $color-dorado;
+        font-family: $font-sans;
+      }
+    }
+
+    .Titulo{
+      font-family: $font-titulos;
+      font-size: clamp(5rem, 3vw, 5rem);
+      font-weight: 300;
+      line-height: 1.1;
+      margin-bottom: 0;
+      
+      em{
+        color: $color-dorado;
+      }
+    }
+
+    .SubTitulo{
+      font-family: $font-titulos;
+      font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+      font-weight: 300;
+      font-style: italic;
+      color: $color-cafe;
+      margin-bottom: 2rem;
+    }
+
+    .Descripcion{
+      font-size: 0.92rem;
+      color: $color-cafe;
+      max-width: 480px;
+      margin: 0 auto 3rem;
+      letter-spacing: 0.02em;
+    }
+
+    .BotonCS{
+      display: flex;
+      gap: 1.5rem;
+      justify-content: center;
+
+      .BotonCatalago{
+        display: inline-block;
+        font-family: $font-sans;
+        font-size: 0.76rem;
+        font-weight: 400;
+        letter-spacing: 0.22em;
+        text-transform: uppercase;
+        color: $color-blanco;
+        background: $color-dorado_mas_oscuro;
+        border: none;
+        padding: 1rem 2.5rem;
+        text-decoration: none;
+        border-radius: 2px;
+        transition: background 0.3s, transform 0.2s;
+
+        &:hover{
+          background: $color-dorado_oscuro;
+          transform: translateY(-2px);
+        }
+      }
+
+      .BotonSolicitarCot{
+        display: inline-block;
+        font-family: $font-sans;
+        font-size: 0.76rem;
+        font-weight: 400;
+        letter-spacing: 0.22em;
+        text-transform: uppercase;
+        color: $color-dorado_mas_oscuro;
+        background: transparent;
+        border: 1px solid $color-dorado_mas_oscuro;
+        padding: 1rem 2.5rem;
+        text-decoration: none;
+        border-radius: 2px;
+        transition: background 0.3s, transform 0.2s;
+
+        &:hover{
+          color: $color-blanco;
+          background: $color-dorado_mas_oscuro;
+          transform: translateY(-2px);
+        }
+      }
+    }
   }
 }
+
+//Tipos de eventos
