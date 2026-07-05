@@ -223,4 +223,107 @@ header{
   }
 }
 
-//Tipos de eventos
+//---------------------------------
+// Mejoras visuales para moviles
+//---------------------------------
+@media(max-width: 768px){
+  body{
+    overflow-x: hidden;
+  }
+
+  header{
+    padding: 0.75rem 1rem;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+
+    .NombreEmpresa{
+      font-size: 2rem;
+      flex-basis: 100%;
+      text-align: center;
+      margin-bottom: 0.5rem;
+      letter-spacing: 0.05rem;
+    }
+
+    nav{
+      flex-basis: 100%;
+      width: 100%;
+      margin-bottom: 0;
+      margin-top: -1rem;
+      text-align: center;
+
+      ul{
+        gap: 0.4rem;
+        flex-basis: 100%;
+        justify-content: center;
+        text-align: center;
+        flex-wrap: wrap;
+        padding: 0;
+      }
+
+      a{
+        font-size: 0.71rem;
+        letter-spacing: 0.2rem;
+        padding: 0.2rem 0.3rem;
+      }
+    }
+  }
+
+  #Home{
+    min-height: auto;
+    padding: 1.5rem 1rem;
+    align-items: center;
+    margin-bottom: 0;
+
+    .Contenido{
+      width: 100%;
+      max-width: 100%;
+
+      .TagContenido{
+        padding: 0.35rem 0.75rem;
+        font-size: 0.22rem;
+        letter-spacing: 0.2rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0;
+
+        .Tag{
+          font-size: 0.6rem;
+        }
+      }
+
+      .Titulo{
+        font-size: clamp(1.8rem, 5vw, 2.8rem);
+        margin-bottom: 1.5rem;
+        line-height: 1.2;
+      }
+
+      .SubTitulo{
+        font-size: clamp(1.3rem, 2vw, 1.2rem);
+        margin-bottom: 1.5rem;
+        line-height: 1.4;
+      }
+
+      .Descripcion{
+        font-size: 1rem;
+        max-width: 100%;
+        margin: 0 auto 2rem;
+        padding: 0 0.5rem;
+        line-height: 1.5;
+        letter-spacing: 0.01em;
+      }
+
+      .BotonCS{
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+
+        .BotonCatalago,
+        .BotonSolicitarCot{
+          width: 100%;
+          padding: 0.75rem 0;
+          font-size: 0.7rem;
+          letter-spacing: 0.15em;
+        }
+      }
+    } 
+  }
+}
