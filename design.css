@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font-family: "Jost", sans-serif;
   background: #FAF7F2;
@@ -275,6 +276,225 @@ header nav a:hover::after {
   font-weight: 300;
   color: rgba(201, 169, 110, 0.12);
   line-height: 1;
+}
+
+#Catalago {
+  max-width: 1400px;
+  margin: 0 0;
+}
+#Catalago .Catalago_Cabecera {
+  display: grid;
+  gap: 4rem;
+  align-items: end;
+  margin-bottom: 3rem;
+}
+#Catalago .Catalago_Cabecera .Titulo_Catalago {
+  font-size: clamp(1rem, 1vw, 2.5rem);
+  font-weight: 200;
+  margin: 0 0 -5rem 4rem;
+  padding: 2rem 0 0 0;
+  color: #8B6A3A;
+  letter-spacing: 0.15rem;
+}
+#Catalago .Catalago_Cabecera .Subtitulo_Catalago {
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(3rem, 3vw, 1.5rem);
+  font-weight: 200;
+  margin: 0 0 -4rem 4rem;
+  padding: 0.5rem 0 0 0;
+  color: #1C1612;
+  letter-spacing: 0.05rem;
+}
+#Catalago .Catalago_Cabecera .Subtitulo_Catalago em {
+  color: #8B6A3A;
+}
+#Catalago .Catalago_Cabecera .Divisor_corto {
+  width: 50px;
+  height: 1px;
+  background: #C9A96E;
+  margin: 0 0 0 4rem;
+}
+#Catalago .Catalago_Cabecera .Descripcion_Catalago {
+  font-size: 1rem;
+  color: #4A3F35;
+  max-width: 600px;
+  margin: -3rem 0 -1rem 4rem;
+}
+#Catalago .Catalago_Cabecera .Catalago_Filtro {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin: 0 0 0 4rem;
+}
+#Catalago .Catalago_Cabecera .Catalago_Filtro .filter-btn {
+  font-family: "Jost", sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #000;
+  background: none;
+  border: 1px solid #8B6A3A;
+  padding: 0.45rem 1rem;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: all 0.25s;
+}
+#Catalago .Catalago_Cabecera .Catalago_Filtro .filter-btn:hover,
+#Catalago .Catalago_Cabecera .Catalago_Filtro .filter-btn.active {
+  background: #8B6A3A;
+  color: #fff;
+  border-color: #8B6A3A;
+}
+#Catalago .Catalago_Grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem 4rem;
+}
+#Catalago .Catalago_Grid .Catalago_Item {
+  border-radius: 4px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 2px 20px rgba(28, 22, 18, 0.06);
+  transition: transform 0.35s, box-shadow 0.35s;
+}
+#Catalago .Catalago_Grid .Catalago_Item :hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 40px rgba(28, 22, 18, 0.12);
+}
+#Catalago .Catalago_Grid .Catalago_Item .Catalago_Prevista_Bautizo,
+#Catalago .Catalago_Grid .Catalago_Item .Catalago_Prevista_Fiesta,
+#Catalago .Catalago_Grid .Catalago_Item .Catalago_Prevista_XV,
+#Catalago .Catalago_Grid .Catalago_Item .Catalago_Prevista_Boda,
+#Catalago .Catalago_Grid .Catalago_Item .Catalago_Prevista_Cumpleaños,
+#Catalago .Catalago_Grid .Catalago_Item .Catalago_Prevista_Graduacion,
+#Catalago .Catalago_Grid .Catalago_Item .Catalago_Prevista_Corporativo {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #F8F0E8 0%, #EDE0CE 100%);
+}
+#Catalago .Catalago_Grid .Catalago_Item .Catalago_Prevista_Bautizo .Catalago_Vista,
+#Catalago .Catalago_Grid .Catalago_Item .Catalago_Prevista_Fiesta .Catalago_Vista,
+#Catalago .Catalago_Grid .Catalago_Item .Catalago_Prevista_XV .Catalago_Vista,
+#Catalago .Catalago_Grid .Catalago_Item .Catalago_Prevista_Boda .Catalago_Vista,
+#Catalago .Catalago_Grid .Catalago_Item .Catalago_Prevista_Cumpleaños .Catalago_Vista,
+#Catalago .Catalago_Grid .Catalago_Item .Catalago_Prevista_Graduacion .Catalago_Vista,
+#Catalago .Catalago_Grid .Catalago_Item .Catalago_Prevista_Corporativo .Catalago_Vista {
+  width: 140px;
+  height: 200px;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 3px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 1rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(-3deg);
+}
+#Catalago .Catalago_Grid .Catalago_Item .Catalago_Prevista_Bautizo .Catalago_Vista .Vista_Line,
+#Catalago .Catalago_Grid .Catalago_Item .Catalago_Prevista_Fiesta .Catalago_Vista .Vista_Line,
+#Catalago .Catalago_Grid .Catalago_Item .Catalago_Prevista_XV .Catalago_Vista .Vista_Line,
+#Catalago .Catalago_Grid .Catalago_Item .Catalago_Prevista_Boda .Catalago_Vista .Vista_Line,
+#Catalago .Catalago_Grid .Catalago_Item .Catalago_Prevista_Cumpleaños .Catalago_Vista .Vista_Line,
+#Catalago .Catalago_Grid .Catalago_Item .Catalago_Prevista_Graduacion .Catalago_Vista .Vista_Line,
+#Catalago .Catalago_Grid .Catalago_Item .Catalago_Prevista_Corporativo .Catalago_Vista .Vista_Line {
+  height: 1px;
+  background: rgba(201, 169, 110, 0.5);
+  width: 80%;
+}
+#Catalago .Catalago_Grid .Catalago_Item .Catalago_Prevista_Bautizo .Catalago_Vista .Vista_Text,
+#Catalago .Catalago_Grid .Catalago_Item .Catalago_Prevista_Fiesta .Catalago_Vista .Vista_Text,
+#Catalago .Catalago_Grid .Catalago_Item .Catalago_Prevista_XV .Catalago_Vista .Vista_Text,
+#Catalago .Catalago_Grid .Catalago_Item .Catalago_Prevista_Boda .Catalago_Vista .Vista_Text,
+#Catalago .Catalago_Grid .Catalago_Item .Catalago_Prevista_Cumpleaños .Catalago_Vista .Vista_Text,
+#Catalago .Catalago_Grid .Catalago_Item .Catalago_Prevista_Graduacion .Catalago_Vista .Vista_Text,
+#Catalago .Catalago_Grid .Catalago_Item .Catalago_Prevista_Corporativo .Catalago_Vista .Vista_Text {
+  font-family: "Jost", sans-serif;
+  font-size: 0.7rem;
+  color: #1C1612;
+  text-align: center;
+  font-style: italic;
+  letter-spacing: 0.05em;
+}
+#Catalago .Catalago_Grid .Catalago_Item .Catalago_Prevista_Bautizo .Catalago_Vista .Vista_Title,
+#Catalago .Catalago_Grid .Catalago_Item .Catalago_Prevista_Fiesta .Catalago_Vista .Vista_Title,
+#Catalago .Catalago_Grid .Catalago_Item .Catalago_Prevista_XV .Catalago_Vista .Vista_Title,
+#Catalago .Catalago_Grid .Catalago_Item .Catalago_Prevista_Boda .Catalago_Vista .Vista_Title,
+#Catalago .Catalago_Grid .Catalago_Item .Catalago_Prevista_Cumpleaños .Catalago_Vista .Vista_Title,
+#Catalago .Catalago_Grid .Catalago_Item .Catalago_Prevista_Graduacion .Catalago_Vista .Vista_Title,
+#Catalago .Catalago_Grid .Catalago_Item .Catalago_Prevista_Corporativo .Catalago_Vista .Vista_Title {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1rem;
+  color: #1C1612;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 0.05em;
+}
+#Catalago .Catalago_Grid .Catalago_Item .Catalago_Prevista_Bautizo .Tag_Popular,
+#Catalago .Catalago_Grid .Catalago_Item .Catalago_Prevista_Fiesta .Tag_Popular,
+#Catalago .Catalago_Grid .Catalago_Item .Catalago_Prevista_XV .Tag_Popular,
+#Catalago .Catalago_Grid .Catalago_Item .Catalago_Prevista_Boda .Tag_Popular,
+#Catalago .Catalago_Grid .Catalago_Item .Catalago_Prevista_Cumpleaños .Tag_Popular,
+#Catalago .Catalago_Grid .Catalago_Item .Catalago_Prevista_Graduacion .Tag_Popular,
+#Catalago .Catalago_Grid .Catalago_Item .Catalago_Prevista_Corporativo .Tag_Popular {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 0.65rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  background: #8B6A3A;
+  color: #fff;
+  padding: 0.25rem 0.7rem;
+  border-radius: 2px;
+}
+#Catalago .Catalago_Grid .Catalago_Item .Catalago_Prevista_XV {
+  background: linear-gradient(135deg, #F5E8F5 0%, #E8D0F0 100%);
+}
+#Catalago .Catalago_Grid .Catalago_Item .Catalago_Prevista_Cumpleaños {
+  background: linear-gradient(135deg, #E8F0F8 0%, #D0E4F5 100%);
+}
+#Catalago .Catalago_Grid .Catalago_Item .Catalago_Prevista_Bautizo {
+  background: linear-gradient(135deg, #fff7f7 0%, #fff8f8 100%);
+}
+#Catalago .Catalago_Grid .Catalago_Item .Catalago_Prevista_Fiesta {
+  background: linear-gradient(135deg, #E8F5F0 0%, #D0EDE5 100%);
+}
+#Catalago .Catalago_Grid .Catalago_Item .Catalago_Prevista_Graduacion {
+  background: linear-gradient(135deg, #F5F0E0 0%, #EDE5C8 100%);
+}
+#Catalago .Catalago_Grid .Catalago_Item .Catalago_Prevista_Corporativo {
+  background: linear-gradient(135deg, #E8EBF0 0%, #D5DAE5 100%);
+}
+#Catalago .Catalago_Grid .Catalago_Item .Catalago_Info {
+  padding: 1.2rem 1.5rem;
+}
+#Catalago .Catalago_Grid .Catalago_Item .Catalago_Info .Catalago_Tipo_Evento {
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #8B6A3A;
+  margin-bottom: 0.3rem;
+}
+#Catalago .Catalago_Grid .Catalago_Item .Catalago_Info .Catalago_Nombre {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.15rem;
+  font-weight: 400;
+  color: #1C1612;
+  margin-bottom: 0.3rem;
+}
+#Catalago .Catalago_Grid .Catalago_Item .Catalago_Info .Catalago_Descripcion {
+  font-size: 0.8rem;
+  color: #4A3F35;
 }
 
 @media (max-width: 768px) {

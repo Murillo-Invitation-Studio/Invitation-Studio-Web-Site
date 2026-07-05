@@ -341,6 +341,220 @@ header{
   }
 }
 
+#Catalago{
+  max-width: 1400px;
+  margin: 0 0;
+
+  .Catalago_Cabecera{
+    display: grid;
+    gap: 4rem;
+    align-items: end;
+    margin-bottom: 3rem;
+
+    .Titulo_Catalago{
+      font-size: clamp(1rem, 1vw, 2.5rem);
+      font-weight: 200;
+      margin: 0 0 -5rem 4rem;
+      padding: 2rem 0 0 0;
+      color: $color-dorado_mas_oscuro;
+      letter-spacing: 0.15rem;
+    }
+
+    .Subtitulo_Catalago{
+      font-family: $font-titulos;
+      font-size: clamp(3rem, 3vw, 1.5rem);
+      font-weight: 200;
+      margin: 0 0 -4rem 4rem;
+      padding: 0.5rem 0 0 0;
+      color: $color-cafe_oscuro;
+      letter-spacing: 0.05rem;
+
+      em{
+        color:  $color-dorado_mas_oscuro;
+      }
+    }
+
+    .Divisor_corto{
+      width: 50px;
+      height: 1px;
+      background: $color-dorado;
+      margin: 0 0 0 4rem;
+    }
+
+    .Descripcion_Catalago{
+      font-size: 1rem;
+      color: $color-cafe;
+      max-width: 600px;
+      margin: -3rem 0 -1rem 4rem;
+    }
+
+    .Catalago_Filtro{
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      margin: 0 0 0 4rem;
+
+      .filter-btn{
+        font-family: $font-sans;
+        font-size: 0.72rem;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        color: $color-negro;
+        background: none;
+        border: 1px solid $color-dorado_mas_oscuro;
+        padding: 0.45rem 1rem;
+        cursor: pointer;
+        border-radius: 2px;
+        transition: all 0.25s;
+      }
+
+      .filter-btn:hover,
+      .filter-btn.active{
+        background: $color-dorado_mas_oscuro;
+        color: $color-blanco;
+        border-color: $color-dorado_mas_oscuro;
+      }
+    }
+  }
+
+  .Catalago_Grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem 4rem;
+
+    .Catalago_Item{
+      border-radius: 4px;
+      overflow: hidden;
+      background: $color-blanco;
+      box-shadow: 0 2px 20px rgba(28,22,18,0.06);
+      transition: transform 0.35s, box-shadow 0.35s;
+
+      :hover{
+        transform: translateY(-6px);
+        box-shadow: 0 12px 40px rgba(28,22,18,0.12);
+      }
+
+      .Catalago_Prevista_Bautizo,
+      .Catalago_Prevista_Fiesta,
+      .Catalago_Prevista_XV,
+      .Catalago_Prevista_Boda,
+      .Catalago_Prevista_Cumpleaños,
+      .Catalago_Prevista_Graduacion,
+      .Catalago_Prevista_Corporativo{
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        overflow: hidden;
+        background: linear-gradient(135deg, #F8F0E8 0%, #EDE0CE 100%);
+        
+        .Catalago_Vista{
+          width: 140px;
+          height: 200px;
+          background: rgba(255,255,255,0.7);
+          border-radius: 3px;
+          box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: 6px;
+          padding: 1rem;
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%) rotate(-3deg);
+
+          .Vista_Line{
+            height: 1px;
+            background: rgba(201,169,110,0.5);
+            width: 80%;
+          }
+
+          .Vista_Text{
+            font-family: $font-sans;
+            font-size: 0.7rem;
+            color: $color-cafe_oscuro;
+            text-align: center;
+            font-style: italic;
+            letter-spacing: 0.05em;
+          }
+
+          .Vista_Title{
+            font-family: $font-titulos;
+            font-size: 1rem;
+            color: $color-cafe_oscuro;
+            font-weight: 400;
+            text-align: center;
+            letter-spacing: 0.05em;
+          }
+        }
+
+        .Tag_Popular{
+          position: absolute;
+          top: 1rem; right: 1rem;
+          font-size: 0.65rem;
+          letter-spacing: 0.15em;
+          text-transform: uppercase;
+          background: $color-dorado_mas_oscuro;
+          color: $color-blanco;
+          padding: 0.25rem 0.7rem;
+          border-radius: 2px;
+        }
+      }
+
+      .Catalago_Prevista_XV{
+        background: linear-gradient(135deg, #F5E8F5 0%, #E8D0F0 100%);
+      }
+
+      .Catalago_Prevista_Cumpleaños{
+        background: linear-gradient(135deg, #E8F0F8 0%, #D0E4F5 100%);
+      }
+
+      .Catalago_Prevista_Bautizo{
+        background: linear-gradient(135deg, #fff7f7 0%, #fff8f8 100%);
+      }
+      .Catalago_Prevista_Fiesta{
+        background: linear-gradient(135deg, #E8F5F0 0%, #D0EDE5 100%);
+      }
+
+      .Catalago_Prevista_Graduacion{
+        background: linear-gradient(135deg, #F5F0E0 0%, #EDE5C8 100%);
+      }
+
+      .Catalago_Prevista_Corporativo{
+        background: linear-gradient(135deg, #E8EBF0 0%, #D5DAE5 100%);
+      }
+      .Catalago_Info{
+        padding: 1.2rem 1.5rem;
+
+        .Catalago_Tipo_Evento{
+          font-size: 0.7rem;
+          letter-spacing: 0.2em;
+          text-transform: uppercase;
+          color: $color-dorado_mas_oscuro;
+          margin-bottom: 0.3rem;
+        }
+
+        .Catalago_Nombre{
+          font-family: $font-titulos;
+          font-size: 1.15rem;
+          font-weight: 400;
+          color: $color-cafe_oscuro;
+          margin-bottom: 0.3rem;
+        }
+
+        .Catalago_Descripcion{
+          font-size: 0.8rem;
+          color: $color-cafe;
+        }
+      }
+    }
+  }
+}
+
 //---------------------------------
 // Mejoras visuales para moviles
 //---------------------------------
