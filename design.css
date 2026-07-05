@@ -170,6 +170,53 @@ header nav a:hover::after {
   transform: translateY(-2px);
 }
 
+#Eventos {
+  background: #F0EBE1;
+  position: relative;
+  margin-top: -11rem;
+}
+#Eventos ::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #DAA520, transparent);
+}
+#Eventos .Titulo_Eventos {
+  font-size: clamp(1rem, 1vw, 2.5rem);
+  font-weight: 200;
+  margin: 0 0 0 4rem;
+  padding: 2rem 0 0 0;
+  color: #8B6A3A;
+  letter-spacing: 0.15rem;
+}
+#Eventos .Subtitulo_Eventos {
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(3rem, 3vw, 1.5rem);
+  font-weight: 200;
+  margin: 0 0 0 4rem;
+  padding: 0.5rem 0 0 0;
+  color: #1C1612;
+  letter-spacing: 0.05rem;
+}
+#Eventos .Subtitulo_Eventos em {
+  color: #8B6A3A;
+}
+#Eventos .Divisor_corto {
+  width: 50px;
+  height: 1px;
+  background: #C9A96E;
+  margin: 0.5rem 0 1.5rem 4rem;
+}
+#Eventos .Descripcion_Eventos {
+  font-size: 1rem;
+  color: #4A3F35;
+  max-width: 480px;
+  margin: 0 0 0 4rem;
+}
+
 @media (max-width: 768px) {
   body {
     overflow-x: hidden;

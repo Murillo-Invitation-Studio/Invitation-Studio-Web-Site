@@ -11,6 +11,7 @@ $color-dorado_mas_oscuro: #8B6A3A;
 $color-dorado_oscuro: #DAA520;
 $color-dorado: #C9A96E;
 $color-crema: #FAF7F2;
+$color-crema_oscuro: #F0EBE1;
 $color-cafe_oscuro: #1C1612;
 $color-cafe: #4A3F35;
 
@@ -220,6 +221,57 @@ header{
         }
       }
     }
+  }
+}
+
+#Eventos{
+  background: $color-crema_oscuro;
+  position: relative;
+  margin-top: -11rem;
+
+  ::before{
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, $color-dorado_oscuro, transparent);
+  }
+
+  .Titulo_Eventos{
+    font-size: clamp(1rem, 1vw, 2.5rem);
+    font-weight: 200;
+    margin: 0 0 0 4rem;
+    padding: 2rem 0 0 0;
+    color: $color-dorado_mas_oscuro;
+    letter-spacing: 0.15rem;
+  }
+
+  .Subtitulo_Eventos{
+    font-family: $font-titulos;
+    font-size: clamp(3rem, 3vw, 1.5rem);
+    font-weight: 200;
+    margin: 0 0 0 4rem;
+    padding: 0.5rem 0 0 0;
+    color: $color-cafe_oscuro;
+    letter-spacing: 0.05rem;
+
+    em{
+      color:  $color-dorado_mas_oscuro;
+    }
+  }
+
+  .Divisor_corto{
+    width: 50px;
+    height: 1px;
+    background: $color-dorado;
+    margin: 0.5rem 0 1.5rem 4rem;
+  }
+
+  .Descripcion_Eventos{
+    font-size: 1rem;
+    color: $color-cafe;
+    max-width: 480px;
+    margin: 0 0 0 4rem;
   }
 }
 
