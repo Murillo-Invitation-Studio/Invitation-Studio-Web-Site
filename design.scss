@@ -28,6 +28,7 @@ body{
   font-weight: 300;
   line-height: 1.7;
   overflow-x: hidden;
+  margin: 0;
 
   ::before{
     content: '';
@@ -549,6 +550,111 @@ header{
         .Catalago_Descripcion{
           font-size: 0.8rem;
           color: $color-cafe;
+        }
+      }
+    }
+  }
+}
+
+//---------------------------------
+// Porque elegirnos
+//---------------------------------
+#Porque_Elegirnos{
+  background: $color-cafe_oscuro;
+  color: $color-crema;
+  position: relative;
+  overflow: hidden;
+  margin: 4rem 0 0 0;
+
+  ::before{
+    content: '"';
+    position: absolute;
+    top: -1rem; left: 3rem;
+    font-family: $font-titulos;
+    font-size: 20rem;
+    color: rgba(201,169,110,0.06);
+    line-height: 1;
+    pointer-events: none;
+    margin-top: 1rem;
+  }
+
+  .Porque_Cabecera{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    align-items: flex-start;
+    margin-top: 10rem;
+
+    .Divisor_corto{
+      width: 50px;
+      height: 1px;
+      background: $color-dorado;
+      margin: -1rem 0 0 4rem;
+    }
+
+    .Porque_Titulo{
+      font-size: clamp(1rem, 1vw, 2.5rem);
+      font-weight: 200;
+      margin: 0 0 -5rem 4rem;
+      padding: 2rem 0 0 0;
+      color: $color-crema;
+      letter-spacing: 0.15rem;
+    }
+
+    .Porque_Subtitulo{
+      font-family: $font-titulos;
+      font-size: clamp(3rem, 3vw, 1.5rem);
+      font-weight: 200;
+      margin: -1rem 0 -4rem 4rem;
+      padding: 0.5rem 0 0 0;
+      color: $color-crema;
+      letter-spacing: 0.05rem;
+
+      em{
+        color:  $color-dorado_mas_oscuro;
+      }
+    }
+
+    .Porque_Grid{
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      margin: -3rem 4rem 4rem 4rem;
+
+      .Porque_Item{
+        display: flex;
+        gap: 1.2rem;
+        align-items: flex-start;
+        padding: 1.5rem;
+        border: 1px solid rgba(201,169,110,0.2);
+        border-radius: 4px;
+        transition: border-color 0.3s;
+
+        &:hover{
+          border-color: $color-dorado_oscuro;
+        }
+
+        .Porque_Num{
+          font-family: $font-titulos;
+          font-size: 2rem;
+          color: $color-dorado_mas_oscuro;
+          line-height: 1;
+          font-style: italic;
+          flex-shrink: 0;
+        }
+
+        .Num_Titulo{
+          font-family: $font-titulos;
+          font-size: 1.1rem;
+          font-weight: 400;
+          color: $color-crema;
+          margin-bottom: 0.3rem;
+        }
+
+        .Num_Descripcion{
+          font-size: 0.85rem;
+          color: rgba(250,247,242,0.6);
+          line-height: 1.7;
         }
       }
     }
