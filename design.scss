@@ -225,6 +225,9 @@ header{
   }
 }
 
+//---------------------------------
+// Eventos y servicios
+//---------------------------------
 #Eventos{
   background: $color-crema_oscuro;
   position: relative;
@@ -342,6 +345,9 @@ header{
   }
 }
 
+//---------------------------------
+// Catalago de nuestros productos
+//---------------------------------
 #Catalago{
   max-width: 1400px;
   margin: 0 0;
@@ -656,6 +662,98 @@ header{
           color: rgba(250,247,242,0.6);
           line-height: 1.7;
         }
+      }
+    }
+  }
+}
+
+//---------------------------------
+// Proceso de trabajo
+//---------------------------------
+#Proceso{
+  background: $color-crema;
+  text-align: center;
+  padding: 3rem 0;
+
+  .Proceso_Titulo{
+    font-size: clamp(1rem, 1vw, 2.5rem);
+    font-weight: 200;
+    margin: 0;
+    padding: 2rem 0 1rem 0;
+    color: $color-dorado_mas_oscuro;
+    letter-spacing: 0.15rem;
+  }
+
+  .Proceso_Subtitulo{
+    font-family: $font-titulos;
+    font-size: clamp(1.5rem, 3vw, 3rem);
+    font-weight: 200;
+    margin: 0 0 3rem 0;
+    padding: 0;
+    color: $color-cafe_oscuro;
+    letter-spacing: 0.05rem;
+
+    em{
+      color: $color-dorado_mas_oscuro;
+    }
+  }
+
+  .Procesos_Pasos{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+    margin-top: 4rem;
+    padding: 0 2rem;
+    position: relative;
+
+    &::before{
+      content: '';
+      position: absolute;
+      top: 1.4rem;
+      left: 12.5%;
+      right: 12.5%;
+      height: 2px;
+      background: linear-gradient(
+        50deg,
+        transparent,
+        $color-dorado,
+        $color-dorado,
+        transparent
+      );
+    }
+
+    .Pasos{
+      padding: 0 1.5rem;
+      position: relative;
+
+      .Paso_Num{
+        width: 44px; 
+        height: 44px;
+        border-radius: 50%;
+        border: 1px solid $color-dorado_oscuro;
+        background: $color-crema;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 1.5rem;
+        font-family: $font-titulos;
+        font-size: 1.1rem;
+        font-style: italic;
+        color: $color-dorado_mas_oscuro;
+      }
+
+      .Paso_Titulo{
+        font-family: $font-titulos;
+        font-size: 1.1rem;
+        font-weight: 400;
+        color: $color-cafe_oscuro;
+        margin-bottom: 0.5rem;
+      }
+
+      .Paso_Descripcion{
+        font-size: 0.82rem;
+        color: $color-cafe_oscuro;
+        line-height: 1.7;
       }
     }
   }
