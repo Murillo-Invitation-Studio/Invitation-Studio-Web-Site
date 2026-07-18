@@ -837,6 +837,80 @@ header nav a:hover::after {
   transform: translateY(-2px);
 }
 
+footer {
+  background: #1C1612;
+  color: rgba(250, 247, 242, 0.5);
+  text-align: center;
+  padding: 3rem 2rem;
+}
+footer .Pie_de_Pagina_Logo {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: #F0EBE1;
+  margin-bottom: 1rem;
+}
+footer .Pie_de_Pagina_Logo em {
+  color: #8B6A3A;
+  font-style: italic;
+}
+footer .Pie_de_Pagina_Lista {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  list-style: none;
+  margin-bottom: 2rem;
+}
+footer .Pie_de_Pagina_Lista a {
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: rgba(250, 247, 242, 0.4);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+footer .Pie_de_Pagina_Lista a:hover {
+  color: #DAA520;
+}
+footer .Pie_de_Pagina_Divisor {
+  width: 40px;
+  height: 1px;
+  background: #DAA520;
+  margin: 1.5rem auto;
+  opacity: 0.4;
+}
+footer .Pie_de_Pagina_Copia {
+  font-size: 0.78rem;
+  color: rgba(250, 247, 242, 0.3);
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-in-delay-1 {
+  transition-delay: 0.1s;
+}
+
+.fade-in-delay-2 {
+  transition-delay: 0.2s;
+}
+
+.fade-in-delay-3 {
+  transition-delay: 0.3s;
+}
+
+.fade-in-delay-4 {
+  transition-delay: 0.4s;
+}
+
 @media (max-width: 768px) {
   body {
     overflow-x: hidden;
