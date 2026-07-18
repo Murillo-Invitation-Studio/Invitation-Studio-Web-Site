@@ -292,6 +292,8 @@ header{
       overflow: hidden;
       transition: background 0.4s;
       cursor: default;
+      display: flex;
+      flex-direction: column;
 
       ::before{
         content: '';
@@ -309,6 +311,27 @@ header{
 
         ::before{
           transform: scaleX(1);
+        }
+      }
+
+      .Ver_Invitaciones{
+        display: block;
+        margin: 0 auto;
+        margin-top: auto;
+        align-self: center;
+        width: 45%;
+        text-align: center;
+        font-size: 0.8rem;
+        padding: 6px 15px;
+        background-color: $color-crema_oscuro;
+        color: $color-dorado_mas_oscuro;
+        text-decoration: none;
+        border-radius: 8px;
+        border: 1px solid $color-dorado_mas_oscuro;
+
+        &:hover{
+          background-color: $color-dorado_mas_oscuro;
+          color: $color-crema;
         }
       }
     }

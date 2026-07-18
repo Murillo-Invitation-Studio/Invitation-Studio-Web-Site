@@ -232,6 +232,8 @@ header nav a:hover::after {
   overflow: hidden;
   transition: background 0.4s;
   cursor: default;
+  display: flex;
+  flex-direction: column;
 }
 #Eventos .Eventos_Grid .Evento_Card ::before {
   content: "";
@@ -250,6 +252,25 @@ header nav a:hover::after {
 }
 #Eventos .Eventos_Grid .Evento_Card:hover ::before {
   transform: scaleX(1);
+}
+#Eventos .Eventos_Grid .Evento_Card .Ver_Invitaciones {
+  display: block;
+  margin: 0 auto;
+  margin-top: auto;
+  align-self: center;
+  width: 45%;
+  text-align: center;
+  font-size: 0.8rem;
+  padding: 6px 15px;
+  background-color: #F0EBE1;
+  color: #8B6A3A;
+  text-decoration: none;
+  border-radius: 8px;
+  border: 1px solid #8B6A3A;
+}
+#Eventos .Eventos_Grid .Evento_Card .Ver_Invitaciones:hover {
+  background-color: #8B6A3A;
+  color: #FAF7F2;
 }
 #Eventos .Eventos_Grid .Evento_Icono {
   font-size: 2rem;
