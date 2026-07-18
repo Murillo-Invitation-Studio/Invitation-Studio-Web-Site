@@ -841,7 +841,7 @@ footer {
   background: #1C1612;
   color: rgba(250, 247, 242, 0.5);
   text-align: center;
-  padding: 3rem 2rem;
+  padding: 1rem 2rem;
 }
 footer .Pie_de_Pagina_Logo {
   font-family: "Cormorant Garamond", serif;
@@ -882,6 +882,32 @@ footer .Pie_de_Pagina_Divisor {
 footer .Pie_de_Pagina_Copia {
   font-size: 0.78rem;
   color: rgba(250, 247, 242, 0.3);
+}
+
+.Boton_Whats_flotante {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 56px;
+  height: 56px;
+  background: #25D366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 20px rgba(37, 211, 102, 0.35);
+  z-index: 200;
+  text-decoration: none;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.Boton_Whats_flotante:hover {
+  transform: scale(1.08);
+  box-shadow: 0 8px 30px rgba(37, 211, 102, 0.45);
+}
+.Boton_Whats_flotante svg {
+  width: 28px;
+  height: 28px;
+  fill: white;
 }
 
 .fade-in {

@@ -759,6 +759,9 @@ header{
   }
 }
 
+//-----------------------------
+// Contacto de la pagina
+//-----------------------------
 #Contacto{
   background: $color-crema_oscuro;
   position: relative;
@@ -956,11 +959,14 @@ header{
   }
 }
 
+//-----------------------------
+// Pie de pagina de la pagina
+//-----------------------------
 footer{
   background: $color-cafe_oscuro;
   color: rgba(250,247,242,0.5);
   text-align: center;
-  padding: 3rem 2rem;
+  padding: 1rem 2rem;
 
   .Pie_de_Pagina_Logo{
     font-family: $font-titulos;
@@ -1010,6 +1016,38 @@ footer{
   }
 }
 
+//--------------------------------
+// Whatsapp de contacto flotante
+//--------------------------------
+.Boton_Whats_flotante{
+  position: fixed;
+  bottom: 2rem; right: 2rem;
+  width: 56px; height: 56px;
+  background: #25D366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 20px rgba(37,211,102,0.35);
+  z-index: 200;
+  text-decoration: none;
+  transition: transform 0.2s, box-shadow 0.2s;
+
+  &:hover{
+    transform: scale(1.08);
+    box-shadow: 0 8px 30px rgba(37,211,102,0.45);
+  }
+
+  svg{
+    width: 28px;
+    height: 28px;
+    fill: white;
+  }
+}
+
+//-----------------------------
+// Animacion de texto
+//-----------------------------
 .fade-in{
   opacity: 0;
   transform: translateY(24px);
