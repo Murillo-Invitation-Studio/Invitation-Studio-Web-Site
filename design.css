@@ -172,6 +172,66 @@ header nav a:hover::after {
   transform: translateY(-2px);
 }
 
+#Home_Boda {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 3rem;
+  position: relative;
+  z-index: 2;
+}
+#Home_Boda .Contenido_Boda .Titulo {
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(5rem, 3vw, 5rem);
+  font-weight: 300;
+  line-height: 1.1;
+  margin-bottom: 0;
+}
+#Home_Boda .Contenido_Boda .Titulo em {
+  color: #C9A96E;
+}
+#Home_Boda .Contenido_Boda .SubTitulo {
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+  font-weight: 300;
+  font-style: italic;
+  color: #4A3F35;
+  margin-bottom: 2rem;
+}
+#Home_Boda .Contenido_Boda .Descripcion {
+  font-size: 0.92rem;
+  color: #4A3F35;
+  max-width: 480px;
+  margin: 0 auto 3rem;
+  letter-spacing: 0.02em;
+}
+#Home_Boda .Contenido_Boda .BotonCS {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+}
+#Home_Boda .Contenido_Boda .BotonCS .BotonSolicitarCot {
+  display: inline-block;
+  font-family: "Jost", sans-serif;
+  font-size: 0.76rem;
+  font-weight: 400;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #8B6A3A;
+  background: transparent;
+  border: 1px solid #8B6A3A;
+  padding: 1rem 2.5rem;
+  text-decoration: none;
+  border-radius: 2px;
+  transition: background 0.3s, transform 0.2s;
+}
+#Home_Boda .Contenido_Boda .BotonCS .BotonSolicitarCot:hover {
+  color: #fff;
+  background: #8B6A3A;
+  transform: translateY(-2px);
+}
+
 #Eventos {
   background: #F0EBE1;
   position: relative;
@@ -211,6 +271,21 @@ header nav a:hover::after {
   height: 1px;
   background: #C9A96E;
   margin: 0.5rem 0 1.5rem 4rem;
+}
+#Eventos .Divisor_largo {
+  width: 90%;
+  height: 5px;
+  background: #A8BBA3;
+  margin: 0.5rem 0 1.5rem 4rem;
+}
+#Eventos .Nombre_de_paquete {
+  text-align: center;
+  font-size: clamp(1rem, 1.5vw, 3rem);
+  font-weight: 500;
+  margin: 0 0 0 4rem;
+  padding: 0 0 0 0;
+  color: #000;
+  letter-spacing: 0.3rem;
 }
 #Eventos .Descripcion_Eventos {
   font-size: 1rem;

@@ -14,6 +14,7 @@ $color-crema: #FAF7F2;
 $color-crema_oscuro: #F0EBE1;
 $color-cafe_oscuro: #1C1612;
 $color-cafe: #4A3F35;
+$color-verde_salvia: #A8BBA3;
 
 $shadow-titulo-pc: 4px 4px 0 $color-negro;
 $shadow-titulo-movil: 3px 3px 0 $color-negro;
@@ -225,6 +226,75 @@ header{
   }
 }
 
+#Home_Boda{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 3rem;
+  position: relative;
+  z-index: 2;
+
+  .Contenido_Boda{
+    .Titulo{
+      font-family: $font-titulos;
+      font-size: clamp(5rem, 3vw, 5rem);
+      font-weight: 300;
+      line-height: 1.1;
+      margin-bottom: 0;
+      
+      em{
+        color: $color-dorado;
+      }
+    }
+
+    .SubTitulo{
+      font-family: $font-titulos;
+      font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+      font-weight: 300;
+      font-style: italic;
+      color: $color-cafe;
+      margin-bottom: 2rem;
+    }
+
+    .Descripcion{
+      font-size: 0.92rem;
+      color: $color-cafe;
+      max-width: 480px;
+      margin: 0 auto 3rem;
+      letter-spacing: 0.02em;
+    }
+
+    .BotonCS{
+      display: flex;
+      gap: 1.5rem;
+      justify-content: center;
+
+      .BotonSolicitarCot{
+        display: inline-block;
+        font-family: $font-sans;
+        font-size: 0.76rem;
+        font-weight: 400;
+        letter-spacing: 0.22em;
+        text-transform: uppercase;
+        color: $color-dorado_mas_oscuro;
+        background: transparent;
+        border: 1px solid $color-dorado_mas_oscuro;
+        padding: 1rem 2.5rem;
+        text-decoration: none;
+        border-radius: 2px;
+        transition: background 0.3s, transform 0.2s;
+
+        &:hover{
+          color: $color-blanco;
+          background: $color-dorado_mas_oscuro;
+          transform: translateY(-2px);
+        }
+      }
+    } 
+  }
+}
+
 //---------------------------------
 // Eventos y servicios
 //---------------------------------
@@ -269,6 +339,23 @@ header{
     height: 1px;
     background: $color-dorado;
     margin: 0.5rem 0 1.5rem 4rem;
+  }
+
+  .Divisor_largo{
+    width: 90%;
+    height: 5px;
+    background: $color-verde_salvia;
+    margin: 0.5rem 0 1.5rem 4rem;
+  }
+
+  .Nombre_de_paquete{
+    text-align: center;
+    font-size: clamp(1rem, 1.5vw, 3rem);
+    font-weight: 500;
+    margin: 0 0 0 4rem;
+    padding: 0 0 0 0;
+    color: $color-negro;
+    letter-spacing: 0.3rem;
   }
 
   .Descripcion_Eventos{
