@@ -303,7 +303,7 @@ header{
   position: relative;
   margin-top: -11rem;
 
-  ::before{
+  &::before{
     content: '';
     position: absolute;
     top: 0; left: 0; right: 0;
@@ -396,7 +396,7 @@ header{
       &:hover{
         background: $color-crema_oscuro;
 
-        ::before{
+        &::before{
           transform: scaleX(1);
         }
       }
@@ -451,6 +451,73 @@ header{
       font-weight: 300;
       color: rgba(201,169,110,0.12);
       line-height: 1;
+    }
+  }
+
+  .Cuadro_Paquete{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 2rem;
+    align-items: start;
+
+    .Parte_Izquierda{
+      text-align: center;
+
+      h3{
+        font-family: $font-titulos;
+      }
+
+      .Boton_Descargar{
+        background-color: $color-verde_salvia;
+        color: white;
+        padding: 12px 25px;
+        text-decoration: none;
+        border-radius: 8px;
+        transition: 0.3s;
+        font-weight: 500;
+        font-size: 0.8rem;
+
+        &:hover{
+          background-color: $color-cafe;
+        }
+      }
+    }
+
+    .Parte_Derecha{
+      text-align: center;
+
+      .Cuadro_Pequeño{
+        background-color: $color-verde_salvia;
+        padding: 2rem;
+        color: white;
+        font-weight: 500;
+        letter-spacing: 0.1rem;
+      }
+
+      h2{
+        text-align: center;
+
+        span{
+          font-weight: 500;
+          font-size: 1rem;
+        }
+      }
+
+      .Lista_Paquete{
+        list-style: none;
+        padding: 0;
+        text-align: left;
+
+        li{
+          display: flex;
+          align-items: center;
+          gap: 12px;
+          border-bottom: 1px solid #ccc;
+          padding: 10px 0;
+          font-size: 14px;
+        }
+      }
     }
   }
 }

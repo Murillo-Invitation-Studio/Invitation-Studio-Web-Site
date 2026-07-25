@@ -237,7 +237,7 @@ header nav a:hover::after {
   position: relative;
   margin-top: -11rem;
 }
-#Eventos ::before {
+#Eventos::before {
   content: "";
   position: absolute;
   top: 0;
@@ -325,7 +325,7 @@ header nav a:hover::after {
 #Eventos .Eventos_Grid .Evento_Card:hover {
   background: #F0EBE1;
 }
-#Eventos .Eventos_Grid .Evento_Card:hover ::before {
+#Eventos .Eventos_Grid .Evento_Card:hover::before {
   transform: scaleX(1);
 }
 #Eventos .Eventos_Grid .Evento_Card .Ver_Invitaciones {
@@ -373,6 +373,62 @@ header nav a:hover::after {
   font-weight: 300;
   color: rgba(201, 169, 110, 0.12);
   line-height: 1;
+}
+#Eventos .Cuadro_Paquete {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 2rem;
+  align-items: start;
+}
+#Eventos .Cuadro_Paquete .Parte_Izquierda {
+  text-align: center;
+}
+#Eventos .Cuadro_Paquete .Parte_Izquierda h3 {
+  font-family: "Cormorant Garamond", serif;
+}
+#Eventos .Cuadro_Paquete .Parte_Izquierda .Boton_Descargar {
+  background-color: #A8BBA3;
+  color: white;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: 0.3s;
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+#Eventos .Cuadro_Paquete .Parte_Izquierda .Boton_Descargar:hover {
+  background-color: #4A3F35;
+}
+#Eventos .Cuadro_Paquete .Parte_Derecha {
+  text-align: center;
+}
+#Eventos .Cuadro_Paquete .Parte_Derecha .Cuadro_Pequeño {
+  background-color: #A8BBA3;
+  padding: 2rem;
+  color: white;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+}
+#Eventos .Cuadro_Paquete .Parte_Derecha h2 {
+  text-align: center;
+}
+#Eventos .Cuadro_Paquete .Parte_Derecha h2 span {
+  font-weight: 500;
+  font-size: 1rem;
+}
+#Eventos .Cuadro_Paquete .Parte_Derecha .Lista_Paquete {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+#Eventos .Cuadro_Paquete .Parte_Derecha .Lista_Paquete li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+  font-size: 14px;
 }
 
 #Catalago {
