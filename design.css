@@ -610,11 +610,14 @@ header nav a:hover::after {
   padding: 0.25rem 0.7rem;
   border-radius: 2px;
 }
+#Catalago .Catalago_Grid .Catalago_Item .Catalago_Prevista_Boda {
+  background: linear-gradient(135deg, #E8F0F8 0%, #D0E4F5 100%);
+}
 #Catalago .Catalago_Grid .Catalago_Item .Catalago_Prevista_XV {
   background: linear-gradient(135deg, #F5E8F5 0%, #E8D0F0 100%);
 }
 #Catalago .Catalago_Grid .Catalago_Item .Catalago_Prevista_Cumpleaños {
-  background: linear-gradient(135deg, #E8F0F8 0%, #D0E4F5 100%);
+  background: linear-gradient(135deg, #F8F0E8 0%, #EDE0CE 100%);
 }
 #Catalago .Catalago_Grid .Catalago_Item .Catalago_Prevista_Bautizo {
   background: linear-gradient(135deg, #fff7f7 0%, #fff8f8 100%);
