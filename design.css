@@ -272,10 +272,16 @@ header nav a:hover::after {
   background: #C9A96E;
   margin: 0.5rem 0 1.5rem 4rem;
 }
-#Eventos .Divisor_largo {
+#Eventos .Divisor_largo_Basico {
   width: 90%;
   height: 5px;
   background: #A8BBA3;
+  margin: 0.5rem 0 1.5rem 4rem;
+}
+#Eventos .Divisor_largo_Bronce {
+  width: 90%;
+  height: 5px;
+  background: #B08D57;
   margin: 0.5rem 0 1.5rem 4rem;
 }
 #Eventos .Nombre_de_paquete {
@@ -387,7 +393,8 @@ header nav a:hover::after {
 #Eventos .Cuadro_Paquete .Parte_Izquierda h3 {
   font-family: "Cormorant Garamond", serif;
 }
-#Eventos .Cuadro_Paquete .Parte_Izquierda .Boton_Descargar {
+#Eventos .Cuadro_Paquete .Parte_Izquierda .Boton_Descargar_Bronce,
+#Eventos .Cuadro_Paquete .Parte_Izquierda .Boton_Descargar_Basico {
   background-color: #A8BBA3;
   color: white;
   padding: 12px 25px;
@@ -397,18 +404,26 @@ header nav a:hover::after {
   font-weight: 500;
   font-size: 0.8rem;
 }
-#Eventos .Cuadro_Paquete .Parte_Izquierda .Boton_Descargar:hover {
+#Eventos .Cuadro_Paquete .Parte_Izquierda .Boton_Descargar_Bronce:hover,
+#Eventos .Cuadro_Paquete .Parte_Izquierda .Boton_Descargar_Basico:hover {
   background-color: #4A3F35;
+}
+#Eventos .Cuadro_Paquete .Parte_Izquierda .Boton_Descargar_Bronce {
+  background-color: #B08D57;
 }
 #Eventos .Cuadro_Paquete .Parte_Derecha {
   text-align: center;
 }
-#Eventos .Cuadro_Paquete .Parte_Derecha .Cuadro_Pequeño {
+#Eventos .Cuadro_Paquete .Parte_Derecha .Cuadro_Pequeño_Bronce,
+#Eventos .Cuadro_Paquete .Parte_Derecha .Cuadro_Pequeño_Basico {
   background-color: #A8BBA3;
   padding: 2rem;
   color: white;
   font-weight: 500;
   letter-spacing: 0.1rem;
+}
+#Eventos .Cuadro_Paquete .Parte_Derecha .Cuadro_Pequeño_Bronce {
+  background-color: #B08D57;
 }
 #Eventos .Cuadro_Paquete .Parte_Derecha h2 {
   text-align: center;
@@ -1090,6 +1105,21 @@ footer .Pie_de_Pagina_Copia {
 
 .fade-in-delay-4 {
   transition-delay: 0.4s;
+}
+
+.Imagen_Paquete {
+  width: 100%;
+  height: 100%;
+  max-width: 250px;
+  margin: 10px auto;
+  border-radius: 10%;
+  display: block;
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 10%, black 95%, transparent 100%), linear-gradient(to right, transparent 0%, black 10%, black 95%, transparent 100%);
+  -webkit-mask-composite: source-in;
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 5%, black 95%, transparent 100%), linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%);
+          mask-image: linear-gradient(to bottom, transparent 0%, black 5%, black 95%, transparent 100%), linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%);
+  -webkit-mask-composite: source-in, xor;
+          mask-composite: intersect;
 }
 
 @media (max-width: 768px) {
