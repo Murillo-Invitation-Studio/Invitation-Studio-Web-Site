@@ -365,6 +365,13 @@ header{
     margin: 0.5rem 0 1.5rem 4rem;
   }
 
+  .Divisor_largo_Oro{
+    width: 90%;
+    height: 5px;
+    background: #D4AF37;
+    margin: 0.5rem 0 1.5rem 4rem;
+  }
+
   .Nombre_de_paquete{
     text-align: center;
     font-size: clamp(1rem, 1.5vw, 3rem);
@@ -485,6 +492,7 @@ header{
         font-family: $font-titulos;
       }
 
+      .Boton_Descargar_Oro,
       .Boton_Descargar_Plata,
       .Boton_Descargar_Bronce,
       .Boton_Descargar_Basico{
@@ -509,11 +517,16 @@ header{
       .Boton_Descargar_Plata{
         background-color: $color-Plata;
       }
+
+      .Boton_Descargar_Oro{
+        background-color: #D4AF37;
+      }
     }
 
     .Parte_Derecha{
       text-align: center;
 
+      .Cuadro_Pequeño_Oro,
       .Cuadro_Pequeño_Bronce,
       .Cuadro_Pequeño_Plata,
       .Cuadro_Pequeño_Basico{
@@ -530,6 +543,10 @@ header{
 
       .Cuadro_Pequeño_Plata{
         background-color: $color-Plata;
+      }
+
+      .Cuadro_Pequeño_Oro{
+        background-color: #D4AF37;
       }
 
       h2{
