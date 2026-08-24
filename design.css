@@ -180,6 +180,7 @@ header nav a:hover::after {
   padding: 3rem;
   position: relative;
   z-index: 2;
+  margin: 0 0 9rem 0;
 }
 #Home_Boda .Contenido_Boda .Titulo {
   font-family: "Cormorant Garamond", serif;
@@ -282,6 +283,12 @@ header nav a:hover::after {
   width: 90%;
   height: 5px;
   background: #B08D57;
+  margin: 0.5rem 0 1.5rem 4rem;
+}
+#Eventos .Divisor_largo_Plata {
+  width: 90%;
+  height: 5px;
+  background: #C0C0C0;
   margin: 0.5rem 0 1.5rem 4rem;
 }
 #Eventos .Nombre_de_paquete {
@@ -393,6 +400,7 @@ header nav a:hover::after {
 #Eventos .Cuadro_Paquete .Parte_Izquierda h3 {
   font-family: "Cormorant Garamond", serif;
 }
+#Eventos .Cuadro_Paquete .Parte_Izquierda .Boton_Descargar_Plata,
 #Eventos .Cuadro_Paquete .Parte_Izquierda .Boton_Descargar_Bronce,
 #Eventos .Cuadro_Paquete .Parte_Izquierda .Boton_Descargar_Basico {
   background-color: #A8BBA3;
@@ -404,6 +412,7 @@ header nav a:hover::after {
   font-weight: 500;
   font-size: 0.8rem;
 }
+#Eventos .Cuadro_Paquete .Parte_Izquierda .Boton_Descargar_Plata:hover,
 #Eventos .Cuadro_Paquete .Parte_Izquierda .Boton_Descargar_Bronce:hover,
 #Eventos .Cuadro_Paquete .Parte_Izquierda .Boton_Descargar_Basico:hover {
   background-color: #4A3F35;
@@ -411,10 +420,14 @@ header nav a:hover::after {
 #Eventos .Cuadro_Paquete .Parte_Izquierda .Boton_Descargar_Bronce {
   background-color: #B08D57;
 }
+#Eventos .Cuadro_Paquete .Parte_Izquierda .Boton_Descargar_Plata {
+  background-color: #C0C0C0;
+}
 #Eventos .Cuadro_Paquete .Parte_Derecha {
   text-align: center;
 }
 #Eventos .Cuadro_Paquete .Parte_Derecha .Cuadro_Pequeño_Bronce,
+#Eventos .Cuadro_Paquete .Parte_Derecha .Cuadro_Pequeño_Plata,
 #Eventos .Cuadro_Paquete .Parte_Derecha .Cuadro_Pequeño_Basico {
   background-color: #A8BBA3;
   padding: 2rem;
@@ -424,6 +437,9 @@ header nav a:hover::after {
 }
 #Eventos .Cuadro_Paquete .Parte_Derecha .Cuadro_Pequeño_Bronce {
   background-color: #B08D57;
+}
+#Eventos .Cuadro_Paquete .Parte_Derecha .Cuadro_Pequeño_Plata {
+  background-color: #C0C0C0;
 }
 #Eventos .Cuadro_Paquete .Parte_Derecha h2 {
   text-align: center;

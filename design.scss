@@ -16,6 +16,7 @@ $color-cafe_oscuro: #1C1612;
 $color-cafe: #4A3F35;
 $color-verde_salvia: #A8BBA3;
 $color-Bronce: #B08D57;
+$color-Plata: #C0C0C0;
 
 $shadow-titulo-pc: 4px 4px 0 $color-negro;
 $shadow-titulo-movil: 3px 3px 0 $color-negro;
@@ -235,6 +236,7 @@ header{
   padding: 3rem;
   position: relative;
   z-index: 2;
+  margin: 0 0 9rem 0;
 
   .Contenido_Boda{
     .Titulo{
@@ -353,6 +355,13 @@ header{
     width: 90%;
     height: 5px;
     background: $color-Bronce;
+    margin: 0.5rem 0 1.5rem 4rem;
+  }
+
+  .Divisor_largo_Plata{
+    width: 90%;
+    height: 5px;
+    background: $color-Plata;
     margin: 0.5rem 0 1.5rem 4rem;
   }
 
@@ -476,6 +485,7 @@ header{
         font-family: $font-titulos;
       }
 
+      .Boton_Descargar_Plata,
       .Boton_Descargar_Bronce,
       .Boton_Descargar_Basico{
         background-color: $color-verde_salvia;
@@ -495,12 +505,17 @@ header{
       .Boton_Descargar_Bronce{
         background-color: $color-Bronce;
       }
+
+      .Boton_Descargar_Plata{
+        background-color: $color-Plata;
+      }
     }
 
     .Parte_Derecha{
       text-align: center;
 
       .Cuadro_Pequeño_Bronce,
+      .Cuadro_Pequeño_Plata,
       .Cuadro_Pequeño_Basico{
         background-color: $color-verde_salvia;
         padding: 2rem;
@@ -511,6 +526,10 @@ header{
 
       .Cuadro_Pequeño_Bronce{
         background-color: $color-Bronce;
+      }
+
+      .Cuadro_Pequeño_Plata{
+        background-color: $color-Plata;
       }
 
       h2{
