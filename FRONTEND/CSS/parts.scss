@@ -1,0 +1,29 @@
+@use './styles' as *;
+
+.Divisor_largo_Basico{
+    width: 90%;
+    height: 5px;
+    background: $color-verde_salvia;
+    margin: 0.5rem 0 1.5rem 4rem;
+}
+
+.Divisor_largo_Bronce{
+    width: 90%;
+    height: 5px;
+    background: $color-Bronce;
+    margin: 0.5rem 0 1.5rem 4rem;
+}
+
+.Divisor_largo_Plata{
+    width: 90%;
+    height: 5px;
+    background: $color-Plata;
+    margin: 0.5rem 0 1.5rem 4rem;
+}
+
+.Divisor_largo_Oro{
+    width: 90%;
+    height: 5px;
+    background: #D4AF37;
+    margin: 0.5rem 0 1.5rem 4rem;
+}
