@@ -16,15 +16,25 @@ document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 // Filtro de catalago
 //---------------------------------------
 function filterCatalog(cat, btn){
-  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+
+  // Cambiar el boton activo
+  document.querySelectorAll('.filter-btn').forEach(b => {
+    b.classList.remove('active');
+  });
+
   btn.classList.add('active');
 
-  document.querySelectorAll('.catalog-item').forEach(item => {
-    if(cat === 'all' || item.dataset.cat === cat){
-      item.style.display = '';
-    }else{
-      item.style.display = 'none';
-    }
+  // Filtrar los elementos del catalogo
+  const items = document.querySelectorAll('.Catalago_Item');
+
+  items.forEach(item => {
+    const category = item.dataset.cat;
+
+    if(cat === 'all' || category === cat){
+      item.style.display = 'block';
+    } else{
+        item.style.display = 'none';
+      }
   });
 }
 

@@ -98,7 +98,7 @@ header{
 }
 
 //-----------------------------
-// Contenido principal
+// Home Contenido principal
 //-----------------------------
 #Home{
   min-height: 100vh;
@@ -208,6 +208,9 @@ header{
   }
 }
 
+//-----------------------------
+// Home de Boda page wedding.html
+//-----------------------------
 #Home_Boda{
   min-height: 100vh;
   display: flex;
@@ -279,7 +282,7 @@ header{
 }
 
 //---------------------------------
-// Eventos y servicios
+// Eventos y servicios principal
 //---------------------------------
 #Eventos{
   background: $color-crema_oscuro;
@@ -322,16 +325,6 @@ header{
     height: 1px;
     background: $color-dorado;
     margin: 0.5rem 0 1.5rem 4rem;
-  }
-
-  .Nombre_de_paquete{
-    text-align: center;
-    font-size: clamp(1rem, 1.5vw, 3rem);
-    font-weight: 500;
-    margin: 0 0 0 4rem;
-    padding: 0 0 0 0;
-    color: $color-negro;
-    letter-spacing: 0.3rem;
   }
 
   .Descripcion_Eventos{
@@ -429,100 +422,60 @@ header{
       line-height: 1;
     }
   }
+}
 
-  .Cuadro_Paquete{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-    padding: 2rem;
-    align-items: start;
+//---------------------------------
+// Evento de boda wedding.html
+//---------------------------------
+.Nombre_de_paquete{
+    text-align: center;
+    font-size: clamp(1rem, 1.5vw, 3rem);
+    font-weight: 500;
+    margin: 0 0 0 4rem;
+    padding: 0 0 0 0;
+    color: $color-negro;
+    letter-spacing: 0.3rem;
+  }
 
-    .Parte_Izquierda{
+.Cuadro_Paquete{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 2rem;
+  align-items: start;
+
+  .Parte_Izquierda{
+    text-align: center;
+
+    h3{
+      font-family: $font-titulos;
+    }
+  }
+
+  .Parte_Derecha{
+    text-align: center;
+
+    h2{
       text-align: center;
 
-      h3{
-        font-family: $font-titulos;
-      }
-
-      .Boton_Descargar_Oro,
-      .Boton_Descargar_Plata,
-      .Boton_Descargar_Bronce,
-      .Boton_Descargar_Basico{
-        background-color: $color-verde_salvia;
-        color: white;
-        padding: 12px 25px;
-        text-decoration: none;
-        border-radius: 8px;
-        transition: 0.3s;
+      span{
         font-weight: 500;
-        font-size: 0.8rem;
-
-        &:hover{
-          background-color: $color-cafe;
-        }
-      }
-
-      .Boton_Descargar_Bronce{
-        background-color: $color-Bronce;
-      }
-
-      .Boton_Descargar_Plata{
-        background-color: $color-Plata;
-      }
-
-      .Boton_Descargar_Oro{
-        background-color: #D4AF37;
+        font-size: 1rem;
       }
     }
 
-    .Parte_Derecha{
-      text-align: center;
+    .Lista_Paquete{
+      list-style: none;
+      padding: 0;
+      text-align: left;
 
-      .Cuadro_Pequeño_Oro,
-      .Cuadro_Pequeño_Bronce,
-      .Cuadro_Pequeño_Plata,
-      .Cuadro_Pequeño_Basico{
-        background-color: $color-verde_salvia;
-        padding: 2rem;
-        color: white;
-        font-weight: 500;
-        letter-spacing: 0.1rem;
-      }
-
-      .Cuadro_Pequeño_Bronce{
-        background-color: $color-Bronce;
-      }
-
-      .Cuadro_Pequeño_Plata{
-        background-color: $color-Plata;
-      }
-
-      .Cuadro_Pequeño_Oro{
-        background-color: #D4AF37;
-      }
-
-      h2{
-        text-align: center;
-
-        span{
-          font-weight: 500;
-          font-size: 1rem;
-        }
-      }
-
-      .Lista_Paquete{
-        list-style: none;
-        padding: 0;
-        text-align: left;
-
-        li{
-          display: flex;
-          align-items: center;
-          gap: 12px;
-          border-bottom: 1px solid #ccc;
-          padding: 10px 0;
-          font-size: 14px;
-        }
+      li{
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        border-bottom: 1px solid #ccc;
+        padding: 10px 0;
+        font-size: 14px;
       }
     }
   }
@@ -1200,35 +1153,6 @@ footer{
   .Pie_de_Pagina_Copia{
     font-size: 0.78rem;
     color: rgba(250,247,242,0.3);
-  }
-}
-
-//--------------------------------
-// Whatsapp de contacto flotante
-//--------------------------------
-.Boton_Whats_flotante{
-  position: fixed;
-  bottom: 2rem; right: 2rem;
-  width: 56px; height: 56px;
-  background: #25D366;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 4px 20px rgba(37,211,102,0.35);
-  z-index: 200;
-  text-decoration: none;
-  transition: transform 0.2s, box-shadow 0.2s;
-
-  &:hover{
-    transform: scale(1.08);
-    box-shadow: 0 8px 30px rgba(37,211,102,0.45);
-  }
-
-  svg{
-    width: 28px;
-    height: 28px;
-    fill: white;
   }
 }
 

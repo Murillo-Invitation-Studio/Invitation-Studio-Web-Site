@@ -1,30 +1,108 @@
 @charset "UTF-8";
-.Divisor_largo_Basico {
-  width: 90%;
-  height: 5px;
-  background: #A8BBA3;
-  margin: 0.5rem 0 1.5rem 4rem;
-}
-
-.Divisor_largo_Bronce {
-  width: 90%;
-  height: 5px;
-  background: #B08D57;
-  margin: 0.5rem 0 1.5rem 4rem;
-}
-
-.Divisor_largo_Plata {
-  width: 90%;
-  height: 5px;
-  background: #C0C0C0;
-  margin: 0.5rem 0 1.5rem 4rem;
-}
-
+.Divisor_largo_Basico,
+.Divisor_largo_Bronce,
+.Divisor_largo_Plata,
 .Divisor_largo_Oro {
   width: 90%;
   height: 5px;
-  background: #D4AF37;
   margin: 0.5rem 0 1.5rem 4rem;
+}
+
+.Divisor_largo_Basico {
+  background: #A8BBA3;
+}
+
+.Divisor_largo_Bronce {
+  background: #B08D57;
+}
+
+.Divisor_largo_Plata {
+  background: #C0C0C0;
+}
+
+.Divisor_largo_Oro {
+  background: #D4AF37;
+}
+
+.Boton_Descargar_Oro,
+.Boton_Descargar_Plata,
+.Boton_Descargar_Bronce,
+.Boton_Descargar_Basico {
+  background-color: #A8BBA3;
+  color: white;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: 0.3s;
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+.Boton_Descargar_Oro:hover,
+.Boton_Descargar_Plata:hover,
+.Boton_Descargar_Bronce:hover,
+.Boton_Descargar_Basico:hover {
+  background-color: #4A3F35;
+}
+
+.Boton_Descargar_Bronce {
+  background-color: #B08D57;
+}
+
+.Boton_Descargar_Plata {
+  background-color: #C0C0C0;
+}
+
+.Boton_Descargar_Oro {
+  background-color: #D4AF37;
+}
+
+.Cuadro_Pequeño_Oro,
+.Cuadro_Pequeño_Bronce,
+.Cuadro_Pequeño_Plata,
+.Cuadro_Pequeño_Basico {
+  background-color: #A8BBA3;
+  padding: 2rem;
+  color: white;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+}
+
+.Cuadro_Pequeño_Bronce {
+  background-color: #B08D57;
+}
+
+.Cuadro_Pequeño_Plata {
+  background-color: #C0C0C0;
+}
+
+.Cuadro_Pequeño_Oro {
+  background-color: #D4AF37;
+}
+
+.Boton_Whats_flotante {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 56px;
+  height: 56px;
+  background: #25D366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 20px rgba(37, 211, 102, 0.35);
+  z-index: 200;
+  text-decoration: none;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.Boton_Whats_flotante:hover {
+  transform: scale(1.08);
+  box-shadow: 0 8px 30px rgba(37, 211, 102, 0.45);
+}
+.Boton_Whats_flotante svg {
+  width: 28px;
+  height: 28px;
+  fill: white;
 }
 
 body {
@@ -301,15 +379,6 @@ header nav a:hover::after {
   background: #C9A96E;
   margin: 0.5rem 0 1.5rem 4rem;
 }
-#Eventos .Nombre_de_paquete {
-  text-align: center;
-  font-size: clamp(1rem, 1.5vw, 3rem);
-  font-weight: 500;
-  margin: 0 0 0 4rem;
-  padding: 0 0 0 0;
-  color: #000;
-  letter-spacing: 0.3rem;
-}
 #Eventos .Descripcion_Eventos {
   font-size: 1rem;
   color: #4A3F35;
@@ -397,82 +466,46 @@ header nav a:hover::after {
   color: rgba(201, 169, 110, 0.12);
   line-height: 1;
 }
-#Eventos .Cuadro_Paquete {
+
+.Nombre_de_paquete {
+  text-align: center;
+  font-size: clamp(1rem, 1.5vw, 3rem);
+  font-weight: 500;
+  margin: 0 0 0 4rem;
+  padding: 0 0 0 0;
+  color: #000;
+  letter-spacing: 0.3rem;
+}
+
+.Cuadro_Paquete {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
   padding: 2rem;
   align-items: start;
 }
-#Eventos .Cuadro_Paquete .Parte_Izquierda {
+.Cuadro_Paquete .Parte_Izquierda {
   text-align: center;
 }
-#Eventos .Cuadro_Paquete .Parte_Izquierda h3 {
+.Cuadro_Paquete .Parte_Izquierda h3 {
   font-family: "Cormorant Garamond", serif;
 }
-#Eventos .Cuadro_Paquete .Parte_Izquierda .Boton_Descargar_Oro,
-#Eventos .Cuadro_Paquete .Parte_Izquierda .Boton_Descargar_Plata,
-#Eventos .Cuadro_Paquete .Parte_Izquierda .Boton_Descargar_Bronce,
-#Eventos .Cuadro_Paquete .Parte_Izquierda .Boton_Descargar_Basico {
-  background-color: #A8BBA3;
-  color: white;
-  padding: 12px 25px;
-  text-decoration: none;
-  border-radius: 8px;
-  transition: 0.3s;
-  font-weight: 500;
-  font-size: 0.8rem;
-}
-#Eventos .Cuadro_Paquete .Parte_Izquierda .Boton_Descargar_Oro:hover,
-#Eventos .Cuadro_Paquete .Parte_Izquierda .Boton_Descargar_Plata:hover,
-#Eventos .Cuadro_Paquete .Parte_Izquierda .Boton_Descargar_Bronce:hover,
-#Eventos .Cuadro_Paquete .Parte_Izquierda .Boton_Descargar_Basico:hover {
-  background-color: #4A3F35;
-}
-#Eventos .Cuadro_Paquete .Parte_Izquierda .Boton_Descargar_Bronce {
-  background-color: #B08D57;
-}
-#Eventos .Cuadro_Paquete .Parte_Izquierda .Boton_Descargar_Plata {
-  background-color: #C0C0C0;
-}
-#Eventos .Cuadro_Paquete .Parte_Izquierda .Boton_Descargar_Oro {
-  background-color: #D4AF37;
-}
-#Eventos .Cuadro_Paquete .Parte_Derecha {
+.Cuadro_Paquete .Parte_Derecha {
   text-align: center;
 }
-#Eventos .Cuadro_Paquete .Parte_Derecha .Cuadro_Pequeño_Oro,
-#Eventos .Cuadro_Paquete .Parte_Derecha .Cuadro_Pequeño_Bronce,
-#Eventos .Cuadro_Paquete .Parte_Derecha .Cuadro_Pequeño_Plata,
-#Eventos .Cuadro_Paquete .Parte_Derecha .Cuadro_Pequeño_Basico {
-  background-color: #A8BBA3;
-  padding: 2rem;
-  color: white;
-  font-weight: 500;
-  letter-spacing: 0.1rem;
-}
-#Eventos .Cuadro_Paquete .Parte_Derecha .Cuadro_Pequeño_Bronce {
-  background-color: #B08D57;
-}
-#Eventos .Cuadro_Paquete .Parte_Derecha .Cuadro_Pequeño_Plata {
-  background-color: #C0C0C0;
-}
-#Eventos .Cuadro_Paquete .Parte_Derecha .Cuadro_Pequeño_Oro {
-  background-color: #D4AF37;
-}
-#Eventos .Cuadro_Paquete .Parte_Derecha h2 {
+.Cuadro_Paquete .Parte_Derecha h2 {
   text-align: center;
 }
-#Eventos .Cuadro_Paquete .Parte_Derecha h2 span {
+.Cuadro_Paquete .Parte_Derecha h2 span {
   font-weight: 500;
   font-size: 1rem;
 }
-#Eventos .Cuadro_Paquete .Parte_Derecha .Lista_Paquete {
+.Cuadro_Paquete .Parte_Derecha .Lista_Paquete {
   list-style: none;
   padding: 0;
   text-align: left;
 }
-#Eventos .Cuadro_Paquete .Parte_Derecha .Lista_Paquete li {
+.Cuadro_Paquete .Parte_Derecha .Lista_Paquete li {
   display: flex;
   align-items: center;
   gap: 12px;
@@ -1087,32 +1120,6 @@ footer .Pie_de_Pagina_Divisor {
 footer .Pie_de_Pagina_Copia {
   font-size: 0.78rem;
   color: rgba(250, 247, 242, 0.3);
-}
-
-.Boton_Whats_flotante {
-  position: fixed;
-  bottom: 2rem;
-  right: 2rem;
-  width: 56px;
-  height: 56px;
-  background: #25D366;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 4px 20px rgba(37, 211, 102, 0.35);
-  z-index: 200;
-  text-decoration: none;
-  transition: transform 0.2s, box-shadow 0.2s;
-}
-.Boton_Whats_flotante:hover {
-  transform: scale(1.08);
-  box-shadow: 0 8px 30px rgba(37, 211, 102, 0.45);
-}
-.Boton_Whats_flotante svg {
-  width: 28px;
-  height: 28px;
-  fill: white;
 }
 
 .fade-in {
