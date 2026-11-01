@@ -1,0 +1,24 @@
+{
+    "catalago":[
+        {
+            "id" : 1,
+            "categoria" : "boda",
+            "evento" : "Boda",
+            "nombre" : "Floral Elegance",
+            "descripcion" : "Elegancia atemporal con detalles dorados",
+            "personas" : "Ana & Carlos",
+            "popular" : true,
+            "previw" : "boda"
+        },
+        {
+            "id" : 2,
+            "categoria" : "xv",
+            "evento" : "XV Años",
+            "nombre" : "Floral Lila",
+            "descripcion" : "Romantico y elegante con toques florales en tonos lila",
+            "personas" : "Sofia Murillo",
+            "popular" : true,
+            "previw" : "xv"
+        }
+    ]
+}
