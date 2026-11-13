@@ -8,7 +8,7 @@
             "descripcion" : "Elegancia atemporal con detalles dorados",
             "personas" : "Ana & Carlos",
             "popular" : true,
-            "previw" : "boda"
+            "preview" : "boda"
         },
         {
             "id" : 2,
@@ -18,7 +18,57 @@
             "descripcion" : "Romantico y elegante con toques florales en tonos lila",
             "personas" : "Sofia Murillo",
             "popular" : true,
-            "previw" : "xv"
+            "preview" : "xv"
+        },
+        {
+            "id" : 3,
+            "categoria" : "cumpleaños",
+            "evento" : "Cumpleaños",
+            "nombre" : "Modern Birth Day",
+            "descripcion" : "Fresco y contemporáneo para celebraciones adultas",
+            "personas" : null,
+            "popular" : false,
+            "preview" : "cumpleaños"
+        },
+        {
+            "id" : 4,
+            "categoria" : "fiesta",
+            "evento" : "Fiesta",
+            "nombre" : "Modern Party",
+            "descripcion" : "Fresco y contemporáneo para celebraciones adultas",
+            "personas" : null,
+            "popular" : false,
+            "preview" : "fiesta"
+        },
+        {
+            "id" : 5,
+            "categoria" : "bautizo",
+            "evento" : "Bautizo",
+            "nombre" : "Cloud",
+            "descripcion" : "Suave y elegante para la celebración del bautizo",
+            "personas" : null,
+            "popular" : false,
+            "preview" : "bautizo"
+        },
+        {
+            "id" : 6,
+            "categoria" : "graduacion",
+            "evento" : "Graduacion",
+            "nombre" : "Elegant graduation",
+            "descripcion" : "Elegante y moderno para celebrar la graduación",
+            "personas" : "Lucero Jimenez",
+            "popular" : false,
+            "preview" : "graduacion"
+        },
+        {
+            "id" : 7,
+            "categoria" : "corporativo",
+            "evento" : "Corporativo",
+            "nombre" : "Ejecutivo Pro",
+            "descripcion" : "Elegante y moderno para celebrar el evento corporativo",
+            "personas" : null,
+            "popular" : false,
+            "preview" : "corporativo"
         }
     ]
 }
