@@ -110,3 +110,29 @@ async function cargarCatalogo(){
 
 //Ejecutar cuando HTML ya este disponible
 cargarCatalogo();
+
+//---------------------------------------
+// Filtro de catalago
+//---------------------------------------
+function filterCatalog(cat, btn){
+
+  // Cambiar el boton activo
+  document.querySelectorAll('.filter-btn').forEach(b => {
+    b.classList.remove('active');
+  });
+
+  btn.classList.add('active');
+
+  // Filtrar los elementos del catalogo
+  const items = document.querySelectorAll('.Catalago_Item');
+
+  items.forEach(item => {
+    const category = item.dataset.cat;
+
+    if(cat === 'all' || category === cat){
+      item.style.display = 'block';
+    } else{
+        item.style.display = 'none';
+      }
+  });
+}
