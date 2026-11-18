@@ -77,6 +77,15 @@ async function cargarCatalogo(){
                 preview.appendChild(etiqueta);
             }
 
+            //Etiqueta Nuevo
+            if(invitacion.nuevo){
+                const etiqueta = document.createElement('span');
+                etiqueta.className = 'Tag_Nuevo';
+                etiqueta.textContent = 'Nuevo';
+
+                preview.appendChild(etiqueta);
+            }
+
             //Informacion de la invitacion
             const informacion = document.createElement('div');
             informacion.className = 'Catalago_Info';

@@ -647,6 +647,18 @@ header{
           padding: 0.25rem 0.7rem;
           border-radius: 2px;
         }
+
+        .Tag_Nuevo{
+          position: absolute;
+          top: 1rem; right: 1rem;
+          font-size: 0.65rem;
+          letter-spacing: 0.15em;
+          text-transform: uppercase;
+          background: $color-dorado_mas_oscuro;
+          color: $color-blanco;
+          padding: 0.25rem 0.7rem;
+          border-radius: 2px;
+        }
       }
 
       .Catalago_Prevista_Boda{

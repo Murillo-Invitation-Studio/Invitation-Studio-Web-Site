@@ -822,6 +822,24 @@ header nav a:hover::after {
   padding: 0.25rem 0.7rem;
   border-radius: 2px;
 }
+#Catalago .Catalago_Grid .Catalago_Item .Catalago_Prevista_Bautizo .Tag_Nuevo,
+#Catalago .Catalago_Grid .Catalago_Item .Catalago_Prevista_Fiesta .Tag_Nuevo,
+#Catalago .Catalago_Grid .Catalago_Item .Catalago_Prevista_XV .Tag_Nuevo,
+#Catalago .Catalago_Grid .Catalago_Item .Catalago_Prevista_Boda .Tag_Nuevo,
+#Catalago .Catalago_Grid .Catalago_Item .Catalago_Prevista_Cumpleaños .Tag_Nuevo,
+#Catalago .Catalago_Grid .Catalago_Item .Catalago_Prevista_Graduacion .Tag_Nuevo,
+#Catalago .Catalago_Grid .Catalago_Item .Catalago_Prevista_Corporativo .Tag_Nuevo {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 0.65rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  background: #8B6A3A;
+  color: #fff;
+  padding: 0.25rem 0.7rem;
+  border-radius: 2px;
+}
 #Catalago .Catalago_Grid .Catalago_Item .Catalago_Prevista_Boda {
   background: linear-gradient(135deg, #E8F0F8 0%, #D0E4F5 100%);
 }

@@ -8,6 +8,7 @@
             "descripcion" : "Elegancia atemporal con detalles dorados",
             "personas" : "Ana & Carlos",
             "popular" : true,
+            "nuevo" : false,
             "preview" : "boda"
         },
         {
@@ -18,6 +19,7 @@
             "descripcion" : "Romantico y elegante con toques florales en tonos lila",
             "personas" : "Sofia Murillo",
             "popular" : true,
+            "nuevo" : false,
             "preview" : "xv"
         },
         {
@@ -28,6 +30,7 @@
             "descripcion" : "Fresco y contemporáneo para celebraciones adultas",
             "personas" : null,
             "popular" : false,
+            "nuevo" : false,
             "preview" : "cumpleaños"
         },
         {
@@ -38,6 +41,7 @@
             "descripcion" : "Fresco y contemporáneo para celebraciones adultas",
             "personas" : null,
             "popular" : false,
+            "nuevo" : true,
             "preview" : "fiesta"
         },
         {
@@ -47,7 +51,8 @@
             "nombre" : "Cloud",
             "descripcion" : "Suave y elegante para la celebración del bautizo",
             "personas" : null,
-            "popular" : false,
+            "popular" : true,
+            "nuevo" : false,
             "preview" : "bautizo"
         },
         {
@@ -58,6 +63,7 @@
             "descripcion" : "Elegante y moderno para celebrar la graduación",
             "personas" : "Lucero Jimenez",
             "popular" : false,
+            "nuevo" : false,
             "preview" : "graduacion"
         },
         {
@@ -68,6 +74,7 @@
             "descripcion" : "Elegante y moderno para celebrar el evento corporativo",
             "personas" : null,
             "popular" : false,
+            "nuevo" : true,
             "preview" : "corporativo"
         }
     ]
